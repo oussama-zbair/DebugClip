@@ -87,24 +87,34 @@ function Hero() {
         <motion.div {...fadeUp} className="mb-6">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-ds-surface border border-ds-border text-sm text-ds-textSub">
             <Zap size={14} className="text-ds-blue" />
-            Now available on Chrome Web Store
+            Chrome extension for developers — install in 10 seconds
           </span>
         </motion.div>
 
         {/* Headline */}
         <motion.h1 {...fadeUp} transition={{ delay: 0.1, duration: 0.6 }}
           className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-          Your AI-Powered{" "}
-          <span className="gradient-text">Debugging Copilot</span>
+          Capture errors.{" "}
+          <span className="gradient-text">Ask AI. Get fixes.</span>
         </motion.h1>
 
         {/* Subheadline */}
         <motion.p {...fadeUp} transition={{ delay: 0.2, duration: 0.6 }}
           className="text-lg sm:text-xl text-ds-textSub max-w-2xl mx-auto mb-10 leading-relaxed">
-          Turn console errors into actionable AI fixes in one click.
-          DebugClip captures stack traces, failed network requests, and unhandled exceptions —
-          then sends them directly to Claude or ChatGPT as a structured prompt.
+          DebugClip catches console errors, failed network requests, and CSP violations
+          from any tab — then formats them into a clean, structured prompt you can
+          paste into Claude or ChatGPT. No more manual copy-pasting from DevTools.
         </motion.p>
+
+        {/* How it works in one line */}
+        <motion.div {...fadeUp} transition={{ delay: 0.25, duration: 0.6 }}
+          className="flex items-center justify-center gap-3 mb-10 text-sm text-ds-textSub">
+          <span className="px-3 py-1.5 rounded-lg bg-ds-surface border border-ds-border">📥 Captures errors</span>
+          <ArrowRight size={14} className="text-ds-textMuted" />
+          <span className="px-3 py-1.5 rounded-lg bg-ds-surface border border-ds-border">📝 Builds prompt</span>
+          <ArrowRight size={14} className="text-ds-textMuted" />
+          <span className="px-3 py-1.5 rounded-lg bg-ds-surface border border-ds-border">🚀 Send to AI</span>
+        </motion.div>
 
         {/* CTAs */}
         <motion.div {...fadeUp} transition={{ delay: 0.3, duration: 0.6 }}
@@ -117,21 +127,25 @@ function Hero() {
             ▶ Watch Demo
           </a>
           <a href="#how-it-works" className="btn-ghost">
-            See how it works
+            How it works
             <ArrowRight size={16} />
           </a>
         </motion.div>
 
-        {/* Social proof */}
+        {/* Trust signals */}
         <motion.div {...fadeUp} transition={{ delay: 0.4, duration: 0.6 }}
-          className="mt-12 flex items-center justify-center gap-6 text-sm text-ds-textMuted">
-          <span className="flex items-center gap-1">
-            <Star size={14} className="text-yellow-400" fill="currentColor" /> 5.0 on Web Store
+          className="mt-12 flex flex-wrap items-center justify-center gap-5 text-sm text-ds-textMuted">
+          <span className="flex items-center gap-1.5">
+            <Shield size={14} className="text-ds-success" /> 100% local — no data leaves your browser
           </span>
-          <span>•</span>
-          <span>Privacy-first — no data leaves your browser</span>
-          <span>•</span>
-          <span>Works with Claude & ChatGPT</span>
+          <span className="hidden sm:inline">•</span>
+          <span className="flex items-center gap-1.5">
+            <Globe size={14} className="text-ds-blue" /> Works on any website
+          </span>
+          <span className="hidden sm:inline">•</span>
+          <span className="flex items-center gap-1.5">
+            <Zap size={14} className="text-ds-purple" /> Free forever — Pro for $4
+          </span>
         </motion.div>
       </div>
     </section>

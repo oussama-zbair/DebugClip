@@ -84,8 +84,10 @@ Or visit **[debugclip.io](https://debugclip.io)** for more info.
 > No configuration. No setup. Install → browse → errors captured → send to AI.
 
 <p align="center">
-  <img src="assets/how-it-works.svg" alt="How DebugClip Works" width="100%"/>
+  <img src="assets/how-it-works.svg" alt="DebugClip — Browser errors surfaced in a clean floating card" width="100%"/>
 </p>
+
+<p align="center"><em>Less noise, more clarity. DebugClip surfaces what matters — without you opening DevTools.</em></p>
 
 ---
 
