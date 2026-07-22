@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-ds-bg text-ds-text font-sans antialiased; }
+  ::selection { @apply bg-ds-indigo/30 text-white; }
+}
+
+@layer components {
+  .gradient-text {
+    @apply font-extrabold;
+    background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-base font-semibold text-white transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-ds-indigo/50 focus:ring-offset-2 focus:ring-offset-ds-bg;
+    background: linear-gradient(135deg, #38bdf8 0%, #6366f1 55%, #a855f7 100%);
+    box-shadow: 0 0 24px rgba(99,102,241,0.35), 0 4px 12px rgba(0,0,0,0.4);
+  }
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #7dd3fc 0%, #818cf8 55%, #c084fc 100%);
+    box-shadow: 0 0 36px rgba(99,102,241,0.5), 0 6px 16px rgba(0,0,0,0.4);
+    transform: translateY(-2px);
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-base font-semibold
+           border border-ds-border text-ds-textSub hover:text-white hover:border-ds-indigo/50 hover:bg-ds-raised/50
+           transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-ds-surface border border-ds-border rounded-2xl p-6;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  .glow-ring {
+    box-shadow: 0 0 60px rgba(56,189,248,0.1), 0 0 120px rgba(99,102,241,0.08);
+  }
+}
