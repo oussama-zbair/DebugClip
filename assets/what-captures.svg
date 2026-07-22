@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" fill="none">
+  <defs>
+    <linearGradient id="wc-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="wc-brand" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="wc-g">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="200" rx="14" fill="url(#wc-bg)"/>
+  <rect width="800" height="200" rx="14" stroke="#1e293b" stroke-width="1" fill="none"/>
+
+  <!-- ═══ Console column ═══ -->
+  <g transform="translate(20, 15)">
+    <rect width="240" height="170" rx="10" fill="#0f172a" stroke="#f87171" stroke-width="0.8" stroke-opacity="0.5"/>
+    <circle cx="18" cy="18" r="5" fill="#f87171" filter="url(#wc-g)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="32" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="11" fill="#f87171">Console</text>
+    <g font-family="monospace" font-size="9" fill="#cbd5e1">
+      <text x="14" y="44"><tspan fill="#f87171" font-size="7">● </tspan>console.error() / warn()</text>
+      <text x="14" y="62"><tspan fill="#f87171" font-size="7">● </tspan>Uncaught TypeError</text>
+      <text x="14" y="80"><tspan fill="#f87171" font-size="7">● </tspan>ReferenceError</text>
+      <text x="14" y="98"><tspan fill="#f87171" font-size="7">● </tspan>Unhandled Promise.reject()</text>
+    </g>
+    <line x1="14" y1="110" x2="226" y2="110" stroke="#1e293b" stroke-width="0.5"/>
+    <g font-family="Inter,sans-serif" font-size="8" fill="#64748b">
+      <text x="14" y="126">+ Full stack trace</text>
+      <text x="14" y="140">+ Source file : line number</text>
+      <text x="14" y="154">+ Timestamp</text>
+    </g>
+  </g>
+
+  <!-- Arrow 1 -->
+  <g>
+    <circle r="3" fill="#f87171" filter="url(#wc-g)">
+      <animateMotion path="M240,100 C260,60 270,140 280,100" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ═══ Network column ═══ -->
+  <g transform="translate(280, 15)">
+    <rect width="240" height="170" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="0.8" stroke-opacity="0.5"/>
+    <circle cx="18" cy="18" r="5" fill="#38bdf8" filter="url(#wc-g)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="32" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="11" fill="#38bdf8">Network</text>
+    <g font-family="monospace" font-size="9" fill="#cbd5e1">
+      <text x="14" y="44"><tspan fill="#38bdf8" font-size="7">● </tspan>fetch() → 4xx / 5xx</text>
+      <text x="14" y="62"><tspan fill="#38bdf8" font-size="7">● </tspan>DNS failure / Timeout</text>
+      <text x="14" y="80"><tspan fill="#38bdf8" font-size="7">● </tspan>CORS blocked</text>
+      <text x="14" y="98"><tspan fill="#38bdf8" font-size="7">● </tspan>img / css / js 404</text>
+    </g>
+    <line x1="14" y1="110" x2="226" y2="110" stroke="#1e293b" stroke-width="0.5"/>
+    <g font-family="Inter,sans-serif" font-size="8" fill="#64748b">
+      <text x="14" y="126">+ URL + method + status</text>
+      <text x="14" y="140">+ Response headers + body</text>
+      <text x="14" y="154">+ Duration (ms)</text>
+    </g>
+  </g>
+
+  <!-- Arrow 2 -->
+  <g>
+    <circle r="3" fill="#38bdf8" filter="url(#wc-g)">
+      <animateMotion path="M500,100 C520,60 530,140 540,100" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ═══ Security column ═══ -->
+  <g transform="translate(540, 15)">
+    <rect width="240" height="170" rx="10" fill="#0f172a" stroke="#a855f7" stroke-width="0.8" stroke-opacity="0.5"/>
+    <circle cx="18" cy="18" r="5" fill="#a855f7" filter="url(#wc-g)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="32" y="22" font-family="Inter,sans-serif" font-weight="700" font-size="11" fill="#a855f7">Security</text>
+    <g font-family="monospace" font-size="9" fill="#cbd5e1">
+      <text x="14" y="44"><tspan fill="#a855f7" font-size="7">● </tspan>CSP violations</text>
+      <text x="14" y="62"><tspan fill="#a855f7" font-size="7">● </tspan>Mixed content (HTTP/S)</text>
+      <text x="14" y="80"><tspan fill="#a855f7" font-size="7">● </tspan>Deprecated API warnings</text>
+      <text x="14" y="98"><tspan fill="#a855f7" font-size="7">● </tspan>Permission denied</text>
+    </g>
+    <line x1="14" y1="110" x2="226" y2="110" stroke="#1e293b" stroke-width="0.5"/>
+    <g font-family="Inter,sans-serif" font-size="8" fill="#64748b">
+      <text x="14" y="126">+ Directive violated</text>
+      <text x="14" y="140">+ Blocked URI</text>
+      <text x="14" y="154">+ Source file : line</text>
+    </g>
+  </g>
+
+  <!-- Floating connection dots between columns -->
+  <circle r="2" fill="#f87171" opacity="0.6">
+    <animateMotion path="M260,50 L280,50" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2" fill="#38bdf8" opacity="0.6">
+    <animateMotion path="M520,70 L540,70" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2" fill="#a855f7" opacity="0.6">
+    <animateMotion path="M520,130 L540,130" dur="1.4s" repeatCount="indefinite"/>
+  </circle>
+</svg>

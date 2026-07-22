@@ -81,26 +81,23 @@ Or visit **[debugsnap.io](https://debugsnap.io)** for more info.
 
 ## 🏗️ How It Works
 
-```
-┌─────────────────────────────────────────────────────────┐
-│  YOUR BROWSER TAB                                       │
-│                                                         │
-│  console.error() ──┐                                    │
-│  fetch() 500 ──────┤                                    │
-│  CSP violation ────┤     ┌──────────────────────┐       │
-│  img 404 ──────────┼────▶│    DebugSnap         │       │
-│  Promise reject ───┘     │    (captures all)    │       │
-│                          └──────────┬───────────┘       │
-│                                     │                   │
-│                              Compile Markdown            │
-│                                     │                   │
-│                          ┌──────────▼───────────┐       │
-│                          │  Claude / ChatGPT    │       │
-│                          │  (gets perfect       │       │
-│                          │   context instantly)  │       │
-│                          └──────────────────────┘       │
-└─────────────────────────────────────────────────────────┘
-```
+> No configuration. No setup. Install → browse → errors captured → send to AI.
+
+<p align="center">
+  <img src="assets/how-it-works.svg" alt="How DebugSnap Works" width="100%"/>
+</p>
+
+---
+
+## ⚡ What Gets Captured
+
+> Everything you see in Chrome DevTools — without opening Chrome DevTools.
+
+<p align="center">
+  <img src="assets/what-captures.svg" alt="What DebugSnap Captures" width="100%"/>
+</p>
+
+All captured data includes **timestamps, stack traces, request/response headers, and body payloads** — the full context an AI needs to diagnose any issue instantly.
 
 ---
 
