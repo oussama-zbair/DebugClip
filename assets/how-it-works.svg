@@ -62,7 +62,7 @@
     </circle>
   </g>
 
-  <!-- ═══ Step 2: DebugSnap ═══ -->
+  <!-- ═══ Step 2: DebugClip ═══ -->
   <g transform="translate(310, 30)">
     <rect width="180" height="190" rx="12" fill="url(#hw-card)" stroke="url(#hw-brand)" stroke-width="1.5"/>
     <!-- Logo -->
