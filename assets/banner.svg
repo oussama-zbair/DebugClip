@@ -82,7 +82,7 @@
 
   <!-- Title with animated gradient -->
   <text x="600" y="210" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="54" fill="url(#brand)">
-    DebugSnap
+    DebugClip
   </text>
 
   <!-- Tagline -->

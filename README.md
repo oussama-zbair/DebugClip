@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="DebugSnap" width="100%"/>
+  <img src="assets/banner.svg" alt="DebugClip" width="100%"/>
 </p>
 
 <p align="center">
-  <a href="https://chrome.google.com/webstore/detail/debugsnap/YOUR_ID"><img src="https://img.shields.io/chrome-web-store/v/YOUR_ID?style=flat-square&logo=googlechrome&logoColor=white&label=Chrome%20Web%20Store&color=6366f1" alt="Chrome Web Store"></a>
+  <a href="https://chrome.google.com/webstore/detail/debugclip/YOUR_ID"><img src="https://img.shields.io/chrome-web-store/v/YOUR_ID?style=flat-square&logo=googlechrome&logoColor=white&label=Chrome%20Web%20Store&color=6366f1" alt="Chrome Web Store"></a>
   <img src="https://img.shields.io/badge/Manifest-V3-38bdf8?style=flat-square&logo=google-chrome&logoColor=white" alt="Manifest V3">
-  <a href="https://debugsnap.io"><img src="https://img.shields.io/badge/Website-debugsnap.io-a855f7?style=flat-square&logo=vercel&logoColor=white" alt="Website"></a>
+  <a href="https://debugclip.io"><img src="https://img.shields.io/badge/Website-debugclip.io-a855f7?style=flat-square&logo=vercel&logoColor=white" alt="Website"></a>
   <a href="https://paypal.me/oussamazbair9"><img src="https://img.shields.io/badge/Support-PayPal-0070ba?style=flat-square&logo=paypal&logoColor=white" alt="Donate"></a>
   <a href="https://buymeacoffee.com/oussamazbair"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee"></a>
 </p>
 
 <h3 align="center">
   Stop copy-pasting errors into ChatGPT.<br/>
-  DebugSnap captures them and sends them for you.
+  DebugClip captures them and sends them for you.
 </h3>
 
 <p align="center">
@@ -26,8 +26,8 @@
 ## 🎬 See It In Action
 
 <p align="center">
-  <a href="https://debugsnap.io#demo">
-    <img src="https://img.shields.io/badge/▶%20Watch%20Demo-debugsnap.io-6366f1?style=for-the-badge" alt="Watch Demo"/>
+  <a href="https://debugclip.io#demo">
+    <img src="https://img.shields.io/badge/▶%20Watch%20Demo-debugclip.io-6366f1?style=for-the-badge" alt="Watch Demo"/>
   </a>
 </p>
 
@@ -37,9 +37,9 @@
 
 > **You:** See an error in the browser  
 > **Old way:** Open DevTools → find error → copy → switch to AI → paste → add context → wait → switch back. **5-10 min per bug.**  
-> **DebugSnap:** Click the icon → all errors are there → click "Send to Claude" → done. **10 seconds.**
+> **DebugClip:** Click the icon → all errors are there → click "Send to Claude" → done. **10 seconds.**
 
-DebugSnap is a **capture + format + deliver** tool. It doesn't run AI itself — it makes your existing AI tools 10x more effective by giving them perfect context.
+DebugClip is a **capture + format + deliver** tool. It doesn't run AI itself — it makes your existing AI tools 10x more effective by giving them perfect context.
 
 ---
 
@@ -70,12 +70,12 @@ All captured data includes **timestamps, stack traces, request/response headers,
 ## 📦 Install
 
 <p>
-  <a href="https://chrome.google.com/webstore/detail/debugsnap/YOUR_ID">
+  <a href="https://chrome.google.com/webstore/detail/debugclip/YOUR_ID">
     <img src="https://img.shields.io/badge/Install%20from-Chrome%20Web%20Store-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Web Store"/>
   </a>
 </p>
 
-Or visit **[debugsnap.io](https://debugsnap.io)** for more info.
+Or visit **[debugclip.io](https://debugclip.io)** for more info.
 
 ---
 
@@ -84,7 +84,7 @@ Or visit **[debugsnap.io](https://debugsnap.io)** for more info.
 > No configuration. No setup. Install → browse → errors captured → send to AI.
 
 <p align="center">
-  <img src="assets/how-it-works.svg" alt="How DebugSnap Works" width="100%"/>
+  <img src="assets/how-it-works.svg" alt="How DebugClip Works" width="100%"/>
 </p>
 
 ---
@@ -94,7 +94,7 @@ Or visit **[debugsnap.io](https://debugsnap.io)** for more info.
 > Everything you see in Chrome DevTools — without opening Chrome DevTools.
 
 <p align="center">
-  <img src="assets/what-captures.svg" alt="What DebugSnap Captures" width="100%"/>
+  <img src="assets/what-captures.svg" alt="What DebugClip Captures" width="100%"/>
 </p>
 
 All captured data includes **timestamps, stack traces, request/response headers, and body payloads** — the full context an AI needs to diagnose any issue instantly.
@@ -124,13 +124,13 @@ All captured data includes **timestamps, stack traces, request/response headers,
 - ✅ No external servers — the only network call is optional license validation
 - ✅ Minimal permissions — only what's strictly necessary
 
-Read the full [Privacy Policy](https://debugsnap.io/privacy).
+Read the full [Privacy Policy](https://debugclip.io/privacy).
 
 ---
 
 ## 💖 Support the Project
 
-DebugSnap is built and maintained by an indie developer. If it saves you time:
+DebugClip is built and maintained by an indie developer. If it saves you time:
 
 <p>
   <a href="https://paypal.me/oussamazbair9"><img src="https://img.shields.io/badge/Donate%20%241+-PayPal-0070ba?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal"/></a>

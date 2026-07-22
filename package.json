@@ -1,7 +1,7 @@
 {
-  "name": "debugsnap-website",
+  "name": "debugclip-website",
   "version": "1.0.0",
-  "description": "DebugSnap - Landing page and marketing site",
+  "description": "DebugClip - Landing page and marketing site",
   "private": true,
   "scripts": {
     "dev": "next dev",

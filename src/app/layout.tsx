@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "DebugSnap | AI Debugging Copilot for Chrome DevTools",
+  title: "DebugClip | AI Debugging Copilot for Chrome DevTools",
   description:
-    "Stop manually copy-pasting console errors. DebugSnap captures stack traces, network failures, and exceptions — then sends them to Claude or ChatGPT as a structured prompt in one click.",
+    "Stop manually copy-pasting console errors. DebugClip captures stack traces, network failures, and exceptions — then sends them to Claude or ChatGPT as a structured prompt in one click.",
   keywords: "Chrome extension, debug tools, AI debugging, automated error capture, web development, Claude, ChatGPT, DevTools, console errors, network monitor",
-  authors: [{ name: "DebugSnap" }],
+  authors: [{ name: "DebugClip" }],
   openGraph: {
-    title: "DebugSnap — AI-Powered Debugging Copilot",
+    title: "DebugClip — AI-Powered Debugging Copilot",
     description: "Capture browser errors and get AI fixes in one click.",
-    url: "https://debugsnap.io",
-    siteName: "DebugSnap",
+    url: "https://debugclip.io",
+    siteName: "DebugClip",
     type: "website",
   },
-  twitter: { card: "summary_large_image", creator: "@debugsnap" },
+  twitter: { card: "summary_large_image", creator: "@debugclip" },
   themeColor: "#020617",
 };
 

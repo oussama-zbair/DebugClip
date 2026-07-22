@@ -7,9 +7,9 @@ export default function Privacy() {
 
         <h2 className="text-xl font-semibold text-ds-text mt-8">Data Collection</h2>
         <p>
-          DebugSnap does <strong>not</strong> collect, transmit, or store any personal data. All captured
+          DebugClip does <strong>not</strong> collect, transmit, or store any personal data. All captured
           telemetry (console errors, network requests, stack traces) is processed entirely within your
-          browser and is never sent to DebugSnap servers.
+          browser and is never sent to DebugClip servers.
         </p>
 
         <h2 className="text-xl font-semibold text-ds-text mt-8">Local Storage</h2>
@@ -22,15 +22,15 @@ export default function Privacy() {
         <h2 className="text-xl font-semibold text-ds-text mt-8">Network Requests</h2>
         <p>
           The only external network request made by this extension is an optional license key validation
-          call to <code>api.debugsnap.io</code> when a user enters a Pro license key. This request
+          call to <code>api.debugclip.io</code> when a user enters a Pro license key. This request
           contains only the license key string — no page data, error data, or personal information.
         </p>
 
         <h2 className="text-xl font-semibold text-ds-text mt-8">Third-Party Services</h2>
         <p>
-          When you click &quot;Send to AI&quot;, DebugSnap opens a new tab to Claude.ai or ChatGPT.com and
+          When you click &quot;Send to AI&quot;, DebugClip opens a new tab to Claude.ai or ChatGPT.com and
           (Pro tier only) pastes the compiled error prompt into the input field. The prompt content is
-          determined by you and sent directly to the AI provider — DebugSnap does not proxy or store it.
+          determined by you and sent directly to the AI provider — DebugClip does not proxy or store it.
         </p>
 
         <h2 className="text-xl font-semibold text-ds-text mt-8">Permissions</h2>
@@ -44,7 +44,7 @@ export default function Privacy() {
 
         <h2 className="text-xl font-semibold text-ds-text mt-8">Contact</h2>
         <p>
-          For privacy inquiries: <a href="mailto:privacy@debugsnap.io" className="text-ds-blue hover:underline">privacy@debugsnap.io</a>
+          For privacy inquiries: <a href="mailto:privacy@debugclip.io" className="text-ds-blue hover:underline">privacy@debugclip.io</a>
         </p>
       </div>
     </main>

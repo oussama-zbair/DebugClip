@@ -3,7 +3,7 @@
 import { Zap, Chrome, Shield, Code2, Globe, Cpu, ArrowRight, Check, Star } from "lucide-react";
 import { motion } from "framer-motion";
 
-const CHROME_STORE_URL = "https://chrome.google.com/webstore/detail/debugsnap/YOUR_EXTENSION_ID";
+const CHROME_STORE_URL = "https://chrome.google.com/webstore/detail/debugclip/YOUR_EXTENSION_ID";
 
 const fadeUp = {
   initial: { opacity: 0, y: 24 },
@@ -44,7 +44,7 @@ function GitHubBanner() {
             style={{ background: "linear-gradient(135deg, #3884ff, #7c3aed)" }}>
             <Zap size={12} className="text-white" fill="white" />
           </div>
-          <span className="text-sm font-semibold text-ds-text hidden sm:inline">DebugSnap</span>
+          <span className="text-sm font-semibold text-ds-text hidden sm:inline">DebugClip</span>
         </div>
 
         {/* Center: message */}
@@ -54,7 +54,7 @@ function GitHubBanner() {
 
         {/* Right: GitHub star button */}
         <a
-          href="https://github.com/oussama-zbair/debugsnap"
+          href="https://github.com/oussama-zbair/debugclip"
           target="_blank"
           rel="noopener"
           className="group flex items-center gap-2 px-3 py-1.5 rounded-lg border border-ds-border bg-ds-surface hover:border-ds-indigo/50 hover:bg-ds-raised/80 transition-all duration-200"
@@ -102,7 +102,7 @@ function Hero() {
         <motion.p {...fadeUp} transition={{ delay: 0.2, duration: 0.6 }}
           className="text-lg sm:text-xl text-ds-textSub max-w-2xl mx-auto mb-10 leading-relaxed">
           Turn console errors into actionable AI fixes in one click.
-          DebugSnap captures stack traces, failed network requests, and unhandled exceptions —
+          DebugClip captures stack traces, failed network requests, and unhandled exceptions —
           then sends them directly to Claude or ChatGPT as a structured prompt.
         </motion.p>
 
@@ -205,7 +205,7 @@ function WhatWeCaptureSection() {
           Everything DevTools shows. <span className="gradient-text">Without opening DevTools.</span>
         </h2>
         <p className="text-lg text-ds-textSub max-w-2xl mx-auto">
-          DebugSnap captures the same errors, warnings, and network failures you see in Chrome DevTools — 
+          DebugClip captures the same errors, warnings, and network failures you see in Chrome DevTools — 
           but presents them in a clean dashboard with one-click AI analysis.
         </p>
       </motion.div>
@@ -258,7 +258,7 @@ function BeforeAfter() {
     <section className="px-6 py-24 max-w-5xl mx-auto">
       <motion.div {...fadeUp} className="text-center mb-16">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          The old way vs. the <span className="gradient-text">DebugSnap way</span>
+          The old way vs. the <span className="gradient-text">DebugClip way</span>
         </h2>
       </motion.div>
 
@@ -267,7 +267,7 @@ function BeforeAfter() {
         <motion.div {...fadeUp} className="card border-red-500/20 bg-red-500/[0.02]">
           <div className="flex items-center gap-2 mb-5">
             <span className="w-8 h-8 rounded-lg bg-red-500/10 flex items-center justify-center text-ds-error font-bold text-sm">✗</span>
-            <h3 className="text-lg font-bold text-ds-error">Without DebugSnap</h3>
+            <h3 className="text-lg font-bold text-ds-error">Without DebugClip</h3>
           </div>
           <div className="space-y-4">
             {[
@@ -295,13 +295,13 @@ function BeforeAfter() {
         <motion.div {...fadeUp} transition={{ delay: 0.15 }} className="card border-ds-indigo/30 bg-ds-indigo/[0.02]">
           <div className="flex items-center gap-2 mb-5">
             <span className="w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-sm" style={{ background: "linear-gradient(135deg, #3884ff, #7c3aed)" }}>✓</span>
-            <h3 className="text-lg font-bold gradient-text">With DebugSnap</h3>
+            <h3 className="text-lg font-bold gradient-text">With DebugClip</h3>
           </div>
           <div className="space-y-4">
             {[
-              { step: "1", text: "Browse your app — DebugSnap runs silently in the background" },
+              { step: "1", text: "Browse your app — DebugClip runs silently in the background" },
               { step: "2", text: "See the badge count: '3 errors detected'" },
-              { step: "3", text: "Click DebugSnap — all errors + network failures in one view" },
+              { step: "3", text: "Click DebugClip — all errors + network failures in one view" },
               { step: "4", text: "Click 'Send to Claude' — structured Markdown prompt compiled" },
               { step: "5", text: "AI gets full stack trace, headers, request body, status code" },
               { step: "6", text: "Get a specific, actionable fix — not a generic answer" },
@@ -328,7 +328,7 @@ function Features() {
     { icon: <Zap size={24} />, title: "One-Click Capture", desc: "Console errors, warnings, unhandled rejections, failed fetch/XHR — all captured automatically without opening DevTools." },
     { icon: <Code2 size={24} />, title: "Structured AI Prompts", desc: "Errors compiled into token-dense Markdown with stack traces, request/response payloads, and headers — optimized for LLMs." },
     { icon: <Globe size={24} />, title: "Works Everywhere", desc: "Localhost, staging, production — any website. No configuration required. Just install and it works." },
-    { icon: <Shield size={24} />, title: "Privacy-First", desc: "All processing happens locally in your browser. No data is ever sent to DebugSnap servers. BYOK model for API keys." },
+    { icon: <Shield size={24} />, title: "Privacy-First", desc: "All processing happens locally in your browser. No data is ever sent to DebugClip servers. BYOK model for API keys." },
     { icon: <Cpu size={24} />, title: "Claude & ChatGPT", desc: "Send your debug context to Claude or ChatGPT with one click. Auto-injection into the LLM input field (Pro)." },
     { icon: <Chrome size={24} />, title: "Native Chrome Extension", desc: "Manifest V3 compliant. Minimal permissions. Runs in the background with zero performance overhead." },
   ];
@@ -363,9 +363,9 @@ function Features() {
 // ═══════════════════════════════════════════════════════════════
 function HowItWorks() {
   const steps = [
-    { num: "1", title: "Browse any page", desc: "DebugSnap runs silently in the background. No setup needed." },
+    { num: "1", title: "Browse any page", desc: "DebugClip runs silently in the background. No setup needed." },
     { num: "2", title: "Errors are captured", desc: "Console errors, failed API calls, and unhandled exceptions are intercepted automatically." },
-    { num: "3", title: "Click DebugSnap", desc: "Open the extension popup to see all captured telemetry in a beautiful dashboard." },
+    { num: "3", title: "Click DebugClip", desc: "Open the extension popup to see all captured telemetry in a beautiful dashboard." },
     { num: "4", title: "Send to AI", desc: "Select errors, preview the structured prompt, and send to Claude or ChatGPT in one click." },
   ];
 
@@ -403,7 +403,7 @@ function Demo() {
     <section className="px-6 py-24 max-w-5xl mx-auto" id="demo">
       <motion.div {...fadeUp} className="text-center mb-12">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">See it in action</h2>
-        <p className="text-lg text-ds-textSub">Watch DebugSnap capture real errors and compile an AI-ready prompt.</p>
+        <p className="text-lg text-ds-textSub">Watch DebugClip capture real errors and compile an AI-ready prompt.</p>
       </motion.div>
 
       <motion.div {...fadeUp} transition={{ delay: 0.2 }}
@@ -421,7 +421,7 @@ function Demo() {
 
       <motion.p {...fadeUp} transition={{ delay: 0.3 }}
         className="text-center text-sm text-ds-textMuted mt-4">
-        Live recording — no edits, no simulations. This is DebugSnap capturing real errors on real websites.
+        Live recording — no edits, no simulations. This is DebugClip capturing real errors on real websites.
       </motion.p>
     </section>
   );
@@ -485,7 +485,7 @@ function Pricing() {
           <p className="text-3xl font-extrabold mb-1">$1+</p>
           <p className="text-sm text-ds-textMuted mb-5">Buy me a coffee ☕</p>
           <p className="text-sm text-ds-textSub leading-relaxed mb-6 flex-1">
-            DebugSnap is built by an indie developer. Your donations fund new features,
+            DebugClip is built by an indie developer. Your donations fund new features,
             and keep the project alive and growing. Every dollar helps.
           </p>
           <ul className="space-y-2.5 mb-6">
@@ -525,13 +525,13 @@ function Pricing() {
 // ═══════════════════════════════════════════════════════════════
 function FAQ() {
   const faqs = [
-    { q: "Does DebugSnap send my error data to external servers?", a: "No. All error capture and prompt compilation happens locally in your browser. The only optional network call is license key validation for Pro users. Your page data never leaves your machine." },
-    { q: "How do I fix 'TypeError: Cannot read properties of undefined'?", a: "This common React/JS error means you're accessing a property on a null or undefined value. DebugSnap captures the full stack trace showing exactly which line and variable caused it — then sends that context to Claude/ChatGPT for an instant explanation and fix." },
-    { q: "Does it work on localhost?", a: "Yes. DebugSnap works on any website — localhost, staging servers, production apps, even file:// URLs (with permission). No configuration needed." },
-    { q: "How do I fix 'CORS error' or 'net::ERR_FAILED'?", a: "Network errors are captured with full request/response details including headers and status codes. DebugSnap formats this into a prompt that gives the AI enough context to diagnose your CORS configuration or network issue immediately." },
+    { q: "Does DebugClip send my error data to external servers?", a: "No. All error capture and prompt compilation happens locally in your browser. The only optional network call is license key validation for Pro users. Your page data never leaves your machine." },
+    { q: "How do I fix 'TypeError: Cannot read properties of undefined'?", a: "This common React/JS error means you're accessing a property on a null or undefined value. DebugClip captures the full stack trace showing exactly which line and variable caused it — then sends that context to Claude/ChatGPT for an instant explanation and fix." },
+    { q: "Does it work on localhost?", a: "Yes. DebugClip works on any website — localhost, staging servers, production apps, even file:// URLs (with permission). No configuration needed." },
+    { q: "How do I fix 'CORS error' or 'net::ERR_FAILED'?", a: "Network errors are captured with full request/response details including headers and status codes. DebugClip formats this into a prompt that gives the AI enough context to diagnose your CORS configuration or network issue immediately." },
     { q: "What LLMs are supported?", a: "Currently Claude (claude.ai) and ChatGPT (chatgpt.com). The free tier lets you copy prompts to any AI. The Pro tier auto-injects prompts directly into Claude or ChatGPT's input field." },
-    { q: "Is my API key safe?", a: "API keys are stored locally in chrome.storage.local on your device only. They are never transmitted to DebugSnap servers — only directly to the LLM provider you choose (Anthropic or OpenAI)." },
-    { q: "How do I fix '404 Not Found' API errors?", a: "DebugSnap captures the full URL, request method, headers, and response body of failed API calls. The compiled prompt includes all this context so the AI can tell you exactly why your endpoint is returning 404." },
+    { q: "Is my API key safe?", a: "API keys are stored locally in chrome.storage.local on your device only. They are never transmitted to DebugClip servers — only directly to the LLM provider you choose (Anthropic or OpenAI)." },
+    { q: "How do I fix '404 Not Found' API errors?", a: "DebugClip captures the full URL, request method, headers, and response body of failed API calls. The compiled prompt includes all this context so the AI can tell you exactly why your endpoint is returning 404." },
   ];
 
   return (
@@ -571,7 +571,7 @@ function CTA() {
         </h2>
         <p className="text-lg text-ds-textSub mb-8 max-w-lg mx-auto">
           Join thousands of developers who debug faster with AI.
-          Install DebugSnap in 10 seconds.
+          Install DebugClip in 10 seconds.
         </p>
         <a href={CHROME_STORE_URL} target="_blank" rel="noopener" className="btn-primary">
           <Chrome size={18} />
@@ -594,14 +594,14 @@ function Footer() {
             style={{ background: "linear-gradient(135deg, #3884ff, #7c3aed)" }}>
             <Zap size={14} className="text-white" fill="white" />
           </div>
-          <span className="font-bold text-ds-text">DebugSnap</span>
+          <span className="font-bold text-ds-text">DebugClip</span>
         </div>
         <div className="flex items-center gap-6 text-sm text-ds-textMuted">
           <a href="/privacy/" className="hover:text-ds-text transition-colors">Privacy Policy</a>
-          <a href="mailto:support@debugsnap.io" className="hover:text-ds-text transition-colors">Support</a>
-          <a href="https://twitter.com/debugsnap" target="_blank" rel="noopener" className="hover:text-ds-text transition-colors">Twitter</a>
+          <a href="mailto:support@debugclip.io" className="hover:text-ds-text transition-colors">Support</a>
+          <a href="https://twitter.com/debugclip" target="_blank" rel="noopener" className="hover:text-ds-text transition-colors">Twitter</a>
         </div>
-        <p className="text-sm text-ds-textMuted">© 2025 DebugSnap. All rights reserved.</p>
+        <p className="text-sm text-ds-textMuted">© 2025 DebugClip. All rights reserved.</p>
       </div>
     </footer>
   );
