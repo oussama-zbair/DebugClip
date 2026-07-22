@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",  // Static HTML export — deploy to Vercel/Netlify/Cloudflare Pages
+  output: "export",
   images: { unoptimized: true },
   trailingSlash: true,
+  turbopack: {
+    root: ".",
+  },
 };
 
 export default nextConfig;

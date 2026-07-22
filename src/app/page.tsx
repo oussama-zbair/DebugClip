@@ -15,6 +15,7 @@ const fadeUp = {
 export default function Home() {
   return (
     <main className="overflow-hidden">
+      <GitHubBanner />
       <Hero />
       <Problem />
       <BeforeAfter />
@@ -27,6 +28,45 @@ export default function Home() {
       <CTA />
       <Footer />
     </main>
+  );
+}
+
+// ═══════════════════════════════════════════════════════════════
+// GITHUB STAR BANNER
+// ═══════════════════════════════════════════════════════════════
+function GitHubBanner() {
+  return (
+    <div className="sticky top-0 z-50 backdrop-blur-md bg-ds-bg/80 border-b border-ds-border/50">
+      <div className="max-w-5xl mx-auto px-4 py-2.5 flex items-center justify-between">
+        {/* Left: brand */}
+        <div className="flex items-center gap-2.5">
+          <div className="w-6 h-6 rounded-md flex items-center justify-center shrink-0"
+            style={{ background: "linear-gradient(135deg, #3884ff, #7c3aed)" }}>
+            <Zap size={12} className="text-white" fill="white" />
+          </div>
+          <span className="text-sm font-semibold text-ds-text hidden sm:inline">DebugSnap</span>
+        </div>
+
+        {/* Center: message */}
+        <p className="text-xs sm:text-sm text-ds-textSub hidden md:block">
+          Open source landing page — <span className="text-ds-text font-medium">give it a ⭐ if it helps you debug faster</span>
+        </p>
+
+        {/* Right: GitHub star button */}
+        <a
+          href="https://github.com/oussama-zbair/debugsnap"
+          target="_blank"
+          rel="noopener"
+          className="group flex items-center gap-2 px-3 py-1.5 rounded-lg border border-ds-border bg-ds-surface hover:border-ds-indigo/50 hover:bg-ds-raised/80 transition-all duration-200"
+        >
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" className="text-ds-textSub group-hover:text-ds-text transition-colors">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          <span className="text-xs font-medium text-ds-textSub group-hover:text-ds-text transition-colors">Star on GitHub</span>
+          <Star size={12} className="text-yellow-400 group-hover:scale-125 transition-transform" fill="currentColor" />
+        </a>
+      </div>
+    </div>
   );
 }
 

@@ -6,3 +6,5 @@ dist/
 .DS_Store
 .env
 .env.local
+next-env.d.ts
+package-lock.json
