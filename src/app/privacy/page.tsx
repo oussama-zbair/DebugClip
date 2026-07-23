@@ -22,7 +22,7 @@ export default function Privacy() {
         <h2 className="text-xl font-semibold text-ds-text mt-8">Network Requests</h2>
         <p>
           The only external network request made by this extension is an optional license key validation
-          call to <code>api.debugclip.io</code> when a user enters a Pro license key. This request
+          call to <code>api.debugclip.vercel.app</code> when a user enters a Pro license key. This request
           contains only the license key string — no page data, error data, or personal information.
         </p>
 
@@ -44,7 +44,7 @@ export default function Privacy() {
 
         <h2 className="text-xl font-semibold text-ds-text mt-8">Contact</h2>
         <p>
-          For privacy inquiries: <a href="mailto:privacy@debugclip.io" className="text-ds-blue hover:underline">privacy@debugclip.io</a>
+          For privacy inquiries: <a href="mailto:privacy@debugclip.vercel.app" className="text-ds-blue hover:underline">privacy@debugclip.vercel.app</a>
         </p>
       </div>
     </main>

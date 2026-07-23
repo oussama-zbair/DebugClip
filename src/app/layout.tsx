@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DebugClip — AI-Powered Debugging Copilot",
     description: "Capture browser errors and get AI fixes in one click.",
-    url: "https://debugclip.io",
+    url: "https://debugclip.vercel.app",
     siteName: "DebugClip",
     type: "website",
   },

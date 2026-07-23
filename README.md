@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://chrome.google.com/webstore/detail/debugclip/YOUR_ID"><img src="https://img.shields.io/chrome-web-store/v/YOUR_ID?style=flat-square&logo=googlechrome&logoColor=white&label=Chrome%20Web%20Store&color=6366f1" alt="Chrome Web Store"></a>
   <img src="https://img.shields.io/badge/Manifest-V3-38bdf8?style=flat-square&logo=google-chrome&logoColor=white" alt="Manifest V3">
-  <a href="https://debugclip.io"><img src="https://img.shields.io/badge/Website-debugclip.io-a855f7?style=flat-square&logo=vercel&logoColor=white" alt="Website"></a>
+  <a href="https://debugclip.vercel.app"><img src="https://img.shields.io/badge/Website-debugclip.vercel.app-a855f7?style=flat-square&logo=vercel&logoColor=white" alt="Website"></a>
   <a href="https://paypal.me/oussamazbair9"><img src="https://img.shields.io/badge/Support-PayPal-0070ba?style=flat-square&logo=paypal&logoColor=white" alt="Donate"></a>
   <a href="https://buymeacoffee.com/oussamazbair"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee"></a>
 </p>
@@ -26,8 +26,8 @@
 ## 🎬 See It In Action
 
 <p align="center">
-  <a href="https://debugclip.io#demo">
-    <img src="https://img.shields.io/badge/▶%20Watch%20Demo-debugclip.io-6366f1?style=for-the-badge" alt="Watch Demo"/>
+  <a href="https://debugclip.vercel.app#demo">
+    <img src="https://img.shields.io/badge/▶%20Watch%20Demo-debugclip.vercel.app-6366f1?style=for-the-badge" alt="Watch Demo"/>
   </a>
 </p>
 
@@ -80,7 +80,7 @@ All captured data includes **timestamps, stack traces, request/response headers,
   </a>
 </p>
 
-Or visit **[debugclip.io](https://debugclip.io)** for more info.
+Or visit **[debugclip.vercel.app](https://debugclip.vercel.app)** for more info.
 
 ---
 
@@ -131,7 +131,7 @@ All captured data includes **timestamps, stack traces, request/response headers,
 - ✅ No external servers — the only network call is optional license validation
 - ✅ Minimal permissions — only what's strictly necessary
 
-Read the full [Privacy Policy](https://debugclip.io/privacy).
+Read the full [Privacy Policy](https://debugclip.vercel.app/privacy).
 
 ---
 
