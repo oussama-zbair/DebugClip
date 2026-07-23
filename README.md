@@ -31,6 +31,11 @@
   </a>
 </p>
 
+<p align="center">
+  <img src="public/demo.mp4" alt="DebugClip Demo" width="720"/><br/>
+  <sub>📹 Real errors captured on real websites — no simulations</sub>
+</p>
+
 ---
 
 ## 💡 What It Does

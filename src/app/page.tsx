@@ -414,29 +414,65 @@ function HowItWorks() {
 // ═══════════════════════════════════════════════════════════════
 function Demo() {
   return (
-    <section className="px-6 py-24 max-w-5xl mx-auto" id="demo">
-      <motion.div {...fadeUp} className="text-center mb-12">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4">See it in action</h2>
-        <p className="text-lg text-ds-textSub">Watch DebugClip capture real errors and compile an AI-ready prompt.</p>
+    <section className="px-6 py-32 max-w-5xl mx-auto" id="demo">
+      <motion.div {...fadeUp} className="text-center mb-14">
+        <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-ds-surface border border-ds-border text-xs text-ds-textSub mb-4">
+          ▶ Live Demo
+        </span>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+          See <span className="gradient-text">DebugClip</span> in action
+        </h2>
+        <p className="text-lg text-ds-textSub max-w-xl mx-auto">
+          Real errors. Real websites. No setup, no edits — just install and go.
+        </p>
       </motion.div>
 
       <motion.div {...fadeUp} transition={{ delay: 0.2 }}
-        className="relative rounded-2xl border border-ds-border overflow-hidden glow-ring">
-        <video
-          src="/demo.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-auto"
-          poster="/demo-poster.jpg"
-        />
+        className="relative group">
+        {/* Outer glow frame */}
+        <div className="absolute -inset-1 rounded-[20px] opacity-40 group-hover:opacity-60 transition-opacity duration-500"
+          style={{ background: "linear-gradient(135deg, #38bdf8, #6366f1, #a855f7)", filter: "blur(20px)" }} />
+
+        {/* Video container */}
+        <div className="relative rounded-2xl overflow-hidden border border-ds-border/50 bg-ds-bg">
+          {/* Browser-style header bar */}
+          <div className="flex items-center gap-2 px-4 py-2.5 bg-ds-surface border-b border-ds-border/50">
+            <div className="flex gap-1.5">
+              <div className="w-3 h-3 rounded-full bg-[#ef4444]/80" />
+              <div className="w-3 h-3 rounded-full bg-[#fbbf24]/80" />
+              <div className="w-3 h-3 rounded-full bg-[#34d399]/80" />
+            </div>
+            <div className="flex-1 flex justify-center">
+              <div className="px-4 py-1 rounded-md bg-ds-bg/80 border border-ds-border/50 text-xs text-ds-textMuted font-mono">
+                debugclip — live demo
+              </div>
+            </div>
+          </div>
+
+          {/* Video */}
+          <video
+            src="/demo.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-auto block"
+          />
+        </div>
       </motion.div>
 
-      <motion.p {...fadeUp} transition={{ delay: 0.3 }}
-        className="text-center text-sm text-ds-textMuted mt-4">
-        Live recording — no edits, no simulations. This is DebugClip capturing real errors on real websites.
-      </motion.p>
+      {/* Caption + CTA */}
+      <motion.div {...fadeUp} transition={{ delay: 0.3 }}
+        className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+        <p className="text-sm text-ds-textMuted">
+          📹 Live recording on real websites — no simulations
+        </p>
+        <a href={CHROME_STORE_URL} target="_blank" rel="noopener"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-white transition-all hover:-translate-y-0.5"
+          style={{ background: "linear-gradient(135deg, #3884ff, #7c3aed)" }}>
+          <Chrome size={14} /> Try it yourself — Free
+        </a>
+      </motion.div>
     </section>
   );
 }
