@@ -648,8 +648,9 @@ function Footer() {
         </div>
         <div className="flex items-center gap-6 text-sm text-ds-textMuted">
           <a href="/privacy/" className="hover:text-ds-text transition-colors">Privacy Policy</a>
-          <a href="mailto:support@debugclip.vercel.app" className="hover:text-ds-text transition-colors">Support</a>
-          <a href="https://twitter.com/debugclip" target="_blank" rel="noopener" className="hover:text-ds-text transition-colors">Twitter</a>
+          <a href="/terms/" className="hover:text-ds-text transition-colors">Terms of Service</a>
+          <a href="mailto:oussamazbair9@gmail.com" className="hover:text-ds-text transition-colors">Support</a>
+          <a href="https://github.com/oussama-zbair/DebugClip" target="_blank" rel="noopener" className="hover:text-ds-text transition-colors">GitHub</a>
         </div>
         <p className="text-sm text-ds-textMuted">© 2025 DebugClip. All rights reserved.</p>
       </div>
