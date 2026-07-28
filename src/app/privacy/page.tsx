@@ -3,7 +3,7 @@ export default function Privacy() {
     <main className="max-w-3xl mx-auto px-6 py-24">
       <h1 className="text-3xl font-bold mb-8">Privacy Policy</h1>
       <div className="prose prose-invert prose-slate max-w-none space-y-6 text-ds-textSub leading-relaxed">
-        <p><strong>Last updated:</strong> July 2025</p>
+        <p><strong>Last updated:</strong> July 2026</p>
 
         <h2 className="text-xl font-semibold text-ds-text mt-8">Data Collection</h2>
         <p>

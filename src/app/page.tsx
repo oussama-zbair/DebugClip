@@ -652,7 +652,7 @@ function Footer() {
           <a href="mailto:oussamazbair9@gmail.com" className="hover:text-ds-text transition-colors">Support</a>
           <a href="https://github.com/oussama-zbair/DebugClip" target="_blank" rel="noopener" className="hover:text-ds-text transition-colors">GitHub</a>
         </div>
-        <p className="text-sm text-ds-textMuted">© 2025 DebugClip. All rights reserved.</p>
+        <p className="text-sm text-ds-textMuted">© 2026 DebugClip. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -3,7 +3,7 @@ export default function Terms() {
     <main className="max-w-3xl mx-auto px-6 py-24">
       <h1 className="text-3xl font-bold mb-8">Terms of Service</h1>
       <div className="space-y-6 text-ds-textSub leading-relaxed text-sm">
-        <p><strong className="text-ds-text">Last updated:</strong> July 2025</p>
+        <p><strong className="text-ds-text">Last updated:</strong> July 2026</p>
 
         <h2 className="text-xl font-semibold text-ds-text mt-8">1. Acceptance of Terms</h2>
         <p>
