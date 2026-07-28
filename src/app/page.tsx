@@ -498,7 +498,7 @@ function Pricing() {
           <p className="text-3xl font-extrabold mb-1">$0</p>
           <p className="text-sm text-ds-textMuted mb-5">Forever — no limits</p>
           <ul className="space-y-2.5 mb-6">
-            {["Full error & network capture", "Structured AI prompt compiler", "Copy prompt to clipboard", "Claude & ChatGPT support", "Unlimited usage", "Badge error counter"].map((f, i) => (
+            {["Full error & network capture", "Badge error counter", "5 built-in prompt templates", "Prompt preview & copy to clipboard", "Works on any website", "Unlimited usage"].map((f, i) => (
               <li key={i} className="flex items-start gap-2 text-sm text-ds-textSub">
                 <Check size={16} className="text-ds-success shrink-0 mt-0.5" />{f}
               </li>
@@ -518,7 +518,7 @@ function Pricing() {
           <p className="text-3xl font-extrabold mb-1">$4</p>
           <p className="text-sm text-ds-textMuted mb-5">One-time — lifetime access</p>
           <ul className="space-y-2.5 mb-6">
-            {["Everything in Free", "Auto-inject prompt into LLM tab", "Custom prompt templates", "Session history across pages", "LocalStorage snapshot capture", "Priority support & updates"].map((f, i) => (
+            {["Everything in Free", "Send to Claude, ChatGPT, Gemini, DeepSeek, Copilot", "Auto-inject prompt into LLM input", "Session history (persist across pages)", "Smart filtering (ignore noisy errors)", "Custom prompt templates", "LocalStorage snapshots", "Priority support & updates"].map((f, i) => (
               <li key={i} className="flex items-start gap-2 text-sm text-ds-textSub">
                 <Check size={16} className="text-ds-blue shrink-0 mt-0.5" />{f}
               </li>
