@@ -155,9 +155,3 @@ DebugClip is built and maintained by an indie developer. If it saves you time:
 | 0.3.0 📋 | Custom templates, session history |
 | 1.0.0 📋 | Pro tier, license system, Web Store launch |
 | 1.1.0 📋 | DOM snapshots, error grouping, performance metrics |
-
----
-
-<p align="center">
-  <sub>Built with ⚡ by <a href="https://github.com/oussamazbair">Oussama Zbair</a></sub>
-</p>
