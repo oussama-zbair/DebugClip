@@ -123,13 +123,22 @@ function Hero() {
             <Chrome size={18} />
             Add to Chrome — Free
           </a>
+          <a href="https://microsoftedge.microsoft.com/addons/detail/debugclip/YOUR_EDGE_ID" target="_blank" rel="noopener" className="btn-ghost">
+            <Globe size={16} />
+            Get for Edge
+          </a>
           <a href="#demo" className="btn-ghost">
             ▶ Watch Demo
           </a>
-          <a href="#how-it-works" className="btn-ghost">
-            How it works
-            <ArrowRight size={16} />
-          </a>
+        </motion.div>
+
+        {/* Browser support */}
+        <motion.div {...fadeUp} transition={{ delay: 0.35, duration: 0.6 }}
+          className="mt-6 flex items-center justify-center gap-4 text-xs text-ds-textMuted">
+          <span className="flex items-center gap-1.5"><Chrome size={14} /> Chrome</span>
+          <span className="flex items-center gap-1.5"><Globe size={14} /> Edge</span>
+          <span className="text-ds-textMuted/50">Firefox — coming soon</span>
+          <span className="text-ds-textMuted/50">Safari — coming soon</span>
         </motion.div>
 
         {/* Trust signals */}
