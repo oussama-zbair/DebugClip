@@ -528,7 +528,9 @@ function Pricing() {
             MOST POPULAR
           </div>
           <h3 className="text-xl font-bold mb-1">Pro</h3>
-          <p className="text-3xl font-extrabold mb-1">$4</p>
+          <p className="text-3xl font-extrabold mb-1">
+            <span className="text-lg line-through text-ds-textMuted font-normal mr-2">$9.99</span>$4
+          </p>
           <p className="text-sm text-ds-textMuted mb-5">Lifetime — pay once, yours forever</p>
           <ul className="space-y-2.5 mb-6">
             {["Everything in Free — unlimited", "Send to Claude, ChatGPT, Gemini, DeepSeek, Copilot", "Auto-inject prompt into LLM input", "Session history (persist across pages)", "Smart filtering (ignore noisy errors)", "Custom prompt templates", "LocalStorage snapshots", "Priority support & all future updates"].map((f, i) => (
@@ -549,7 +551,9 @@ function Pricing() {
             COMING SOON
           </div>
           <h3 className="text-xl font-bold mb-1">Ultimate</h3>
-          <p className="text-3xl font-extrabold mb-1">$19</p>
+          <p className="text-3xl font-extrabold mb-1">
+            <span className="text-lg line-through text-ds-textMuted font-normal mr-2">$39</span>$19
+          </p>
           <p className="text-sm text-ds-textMuted mb-5">Lifetime — AI response inside the extension</p>
           <ul className="space-y-2.5 mb-6 flex-1">
             {["Everything in Pro", "AI answers directly in the popup (BYOK)", "No tab switching — error → fix in 3 seconds", "VS Code companion extension", "MCP server for AI agents (Cursor, Kiro)", "Multi-tab simultaneous capture", "Webhook/Slack notifications", "All future Ultimate features"].map((f, i) => (
