@@ -126,8 +126,3 @@
 | 0.3.0 | 🚧 Building | Ultimate tier, BYOK AI response, gift licenses, referral program |
 | 1.0.0 | 📋 Planned | VS Code extension, MCP server, webhooks |
 
----
-
-<p align="center">
-  <sub>Built with ⚡ by <a href="https://github.com/oussama-zbair">Oussama Zbair</a></sub>
-</p>
