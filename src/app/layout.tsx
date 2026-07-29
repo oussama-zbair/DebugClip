@@ -24,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="icon" href="/favicon.ico" sizes="32x32" />
         <link rel="apple-touch-icon" href="/icon-192.png" />
+        <meta name="google-site-verification" content="smnDBzAe2xr6lPttYqeD_opsYGWIbuGlnem6zyXp2G8" />
       </head>
       <body>{children}</body>
     </html>
