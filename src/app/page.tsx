@@ -495,9 +495,9 @@ function Pricing() {
         <motion.div {...fadeUp} className="card">
           <h3 className="text-xl font-bold mb-1">Free</h3>
           <p className="text-3xl font-extrabold mb-1">$0</p>
-          <p className="text-sm text-ds-textMuted mb-5">Try it — 2 free uses</p>
+          <p className="text-sm text-ds-textMuted mb-5">See what DebugClip captures</p>
           <ul className="space-y-2.5 mb-6">
-            {["Full error & network capture", "Badge error counter", "View all captured errors", "Prompt preview", "2 free copy/send uses", "All 5 LLM targets available"].map((f, i) => (
+            {["Full error & network capture", "Badge error counter", "View all captured errors", "Prompt preview (blurred)", "Template selector preview", "Works on any website"].map((f, i) => (
               <li key={i} className="flex items-start gap-2 text-sm text-ds-textSub">
                 <Check size={16} className="text-ds-success shrink-0 mt-0.5" />{f}
               </li>
