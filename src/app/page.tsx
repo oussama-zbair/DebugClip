@@ -486,8 +486,7 @@ function Pricing() {
       <motion.div {...fadeUp} className="text-center mb-16">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">Built for developers. Priced like it.</h2>
         <p className="text-lg text-ds-textSub max-w-xl mx-auto">
-          No subscriptions. No hidden fees. Pay once, use forever.
-          We believe good dev tools should be accessible to everyone.
+          No subscriptions. No hidden fees. Pay once, yours forever.
         </p>
       </motion.div>
 
@@ -496,9 +495,9 @@ function Pricing() {
         <motion.div {...fadeUp} className="card">
           <h3 className="text-xl font-bold mb-1">Free</h3>
           <p className="text-3xl font-extrabold mb-1">$0</p>
-          <p className="text-sm text-ds-textMuted mb-5">Forever — no limits</p>
+          <p className="text-sm text-ds-textMuted mb-5">Try it — 2 free uses</p>
           <ul className="space-y-2.5 mb-6">
-            {["Full error & network capture", "Badge error counter", "5 built-in prompt templates", "Prompt preview & copy to clipboard", "Works on any website", "Unlimited usage"].map((f, i) => (
+            {["Full error & network capture", "Badge error counter", "View all captured errors", "Prompt preview", "2 free copy/send uses", "All 5 LLM targets available"].map((f, i) => (
               <li key={i} className="flex items-start gap-2 text-sm text-ds-textSub">
                 <Check size={16} className="text-ds-success shrink-0 mt-0.5" />{f}
               </li>
@@ -512,58 +511,41 @@ function Pricing() {
           className="card border-ds-indigo/40 relative overflow-hidden">
           <div className="absolute top-0 right-0 px-3 py-1 text-xs font-bold rounded-bl-xl"
             style={{ background: "linear-gradient(135deg, #3884ff, #7c3aed)", color: "white" }}>
-            BEST VALUE
+            MOST POPULAR
           </div>
           <h3 className="text-xl font-bold mb-1">Pro</h3>
           <p className="text-3xl font-extrabold mb-1">$4</p>
-          <p className="text-sm text-ds-textMuted mb-5">One-time — lifetime access</p>
+          <p className="text-sm text-ds-textMuted mb-5">Lifetime — pay once, yours forever</p>
           <ul className="space-y-2.5 mb-6">
-            {["Everything in Free", "Send to Claude, ChatGPT, Gemini, DeepSeek, Copilot", "Auto-inject prompt into LLM input", "Session history (persist across pages)", "Smart filtering (ignore noisy errors)", "Custom prompt templates", "LocalStorage snapshots", "Priority support & updates"].map((f, i) => (
+            {["Everything in Free — unlimited", "Send to Claude, ChatGPT, Gemini, DeepSeek, Copilot", "Auto-inject prompt into LLM input", "Session history (persist across pages)", "Smart filtering (ignore noisy errors)", "Custom prompt templates", "LocalStorage snapshots", "Priority support & all future updates"].map((f, i) => (
               <li key={i} className="flex items-start gap-2 text-sm text-ds-textSub">
                 <Check size={16} className="text-ds-blue shrink-0 mt-0.5" />{f}
               </li>
             ))}
           </ul>
-          <a href={CHROME_STORE_URL} className="btn-primary w-full text-center">Get Pro — $4</a>
+          <a href={CHROME_STORE_URL} className="btn-primary w-full text-center">Get Pro — $4 Lifetime</a>
           <p className="text-xs text-ds-textMuted text-center mt-3">Less than a coffee. Saves hours every week.</p>
         </motion.div>
 
         {/* Support / Donate */}
+        {/* Ultimate */}
         <motion.div {...fadeUp} transition={{ delay: 0.2 }}
-          className="card border-yellow-500/20 bg-yellow-500/[0.02] flex flex-col">
-          <h3 className="text-xl font-bold mb-1">Support the Project</h3>
-          <p className="text-3xl font-extrabold mb-1">$1+</p>
-          <p className="text-sm text-ds-textMuted mb-5">Buy me a coffee ☕</p>
-          <p className="text-sm text-ds-textSub leading-relaxed mb-6 flex-1">
-            DebugClip is built by an indie developer. Your donations fund new features,
-            and keep the project alive and growing. Every dollar helps.
-          </p>
-          <ul className="space-y-2.5 mb-6">
-            {["Fund future features & updates", "Support indie open-source dev", "Get mentioned in release notes", "Good karma ✨"].map((f, i) => (
+          className="card border-ds-purple/30 bg-ds-purple/[0.02] flex flex-col relative overflow-hidden">
+          <div className="absolute top-0 right-0 px-3 py-1 text-xs font-bold rounded-bl-xl bg-ds-purple text-white">
+            COMING SOON
+          </div>
+          <h3 className="text-xl font-bold mb-1">Ultimate</h3>
+          <p className="text-3xl font-extrabold mb-1">$19</p>
+          <p className="text-sm text-ds-textMuted mb-5">Lifetime — AI response inside the extension</p>
+          <ul className="space-y-2.5 mb-6 flex-1">
+            {["Everything in Pro", "AI answers directly in the popup (BYOK)", "No tab switching — error → fix in 3 seconds", "VS Code companion extension", "MCP server for AI agents (Cursor, Kiro)", "Multi-tab simultaneous capture", "Webhook/Slack notifications", "All future Ultimate features"].map((f, i) => (
               <li key={i} className="flex items-start gap-2 text-sm text-ds-textSub">
-                <Check size={16} className="text-yellow-400 shrink-0 mt-0.5" />{f}
+                <Check size={16} className="text-ds-purple shrink-0 mt-0.5" />{f}
               </li>
             ))}
           </ul>
-          <p className="text-xs text-ds-textMuted mb-3 text-center">Pick an amount — every dollar counts:</p>
-          <div className="grid grid-cols-3 gap-1.5 mb-3">
-            {["$1", "$3", "$5"].map((amt) => (
-              <a key={amt} href={`https://paypal.me/oussamazbair9/${amt.slice(1)}`} target="_blank" rel="noopener"
-                className="flex items-center justify-center py-2 rounded-lg text-sm font-bold text-white bg-[#0070ba] hover:bg-[#003087] transition-all hover:-translate-y-0.5">
-                {amt}
-              </a>
-            ))}
-          </div>
-          <div className="flex gap-2">
-            <a href="https://paypal.me/oussamazbair9" target="_blank" rel="noopener"
-              className="inline-flex items-center justify-center gap-1.5 flex-1 px-3 py-2.5 rounded-xl text-xs font-semibold text-white bg-[#0070ba] hover:bg-[#003087] transition-all hover:-translate-y-0.5">
-              💙 PayPal (custom)
-            </a>
-            <a href="https://buymeacoffee.com/oussamazbair" target="_blank" rel="noopener"
-              className="inline-flex items-center justify-center gap-1.5 flex-1 px-3 py-2.5 rounded-xl text-xs font-semibold text-ds-bg bg-yellow-400 hover:bg-yellow-300 transition-all hover:-translate-y-0.5">
-              ☕ Coffee ($5+)
-            </a>
-          </div>
+          <button disabled className="btn-ghost w-full text-center opacity-60 cursor-not-allowed">Coming Soon</button>
+          <p className="text-xs text-ds-textMuted text-center mt-3">Join waitlist — get notified when it launches.</p>
         </motion.div>
       </div>
     </section>
