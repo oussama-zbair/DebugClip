@@ -70,10 +70,10 @@
 ## 📦 Install
 
 <p>
-  <a href="https://chrome.google.com/webstore/detail/debugclip/YOUR_ID">
+  <a href="https://chrome.google.com/webstore/detail/debugclip/ID">
     <img src="https://img.shields.io/badge/Chrome-Install%20Free-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome"/>
   </a>
-  <a href="https://microsoftedge.microsoft.com/addons/detail/debugclip/YOUR_EDGE_ID">
+  <a href="https://microsoftedge.microsoft.com/addons/detail/debugclip/ID">
     <img src="https://img.shields.io/badge/Edge-Install%20Free-38bdf8?style=for-the-badge&logo=microsoftedge&logoColor=white" alt="Edge"/>
   </a>
 </p>
