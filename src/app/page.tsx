@@ -3,7 +3,7 @@
 import { Zap, Chrome, Shield, Code2, Globe, Cpu, ArrowRight, Check, Star } from "lucide-react";
 import { motion } from "framer-motion";
 
-const CHROME_STORE_URL = "https://chrome.google.com/webstore/detail/debugclip/YOUR_EXTENSION_ID";
+const CHROME_STORE_URL = "https://chrome.google.com/webstore/detail/debugclip/EXTENSION_ID";
 
 const fadeUp = {
   initial: { opacity: 0, y: 24 },
@@ -539,7 +539,7 @@ function Pricing() {
               </li>
             ))}
           </ul>
-          <a href={CHROME_STORE_URL} className="btn-primary w-full text-center">Get Pro — $4 Lifetime</a>
+          <a href="https://www.creem.io/payment/prod_5Y7R83D4t7jGPJltpeEg22" target="_blank" rel="noopener" className="btn-primary w-full text-center">Get Pro — $4 Lifetime</a>
           <p className="text-xs text-ds-textMuted text-center mt-3">Less than a coffee. Saves hours every week.</p>
         </motion.div>
 
