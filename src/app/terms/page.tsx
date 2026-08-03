@@ -19,12 +19,17 @@ export default function Terms() {
           in the user&apos;s browser.
         </p>
 
-        <h2 className="text-xl font-semibold text-ds-text mt-8">3. Free and Pro Tiers</h2>
+        <h2 className="text-xl font-semibold text-ds-text mt-8">3. Free, Pro, and Ultimate Tiers</h2>
         <p>
-          DebugClip offers a Free tier with core functionality and a paid Pro tier with
-          additional features. Pro licenses are one-time purchases granting lifetime access
-          to Pro features. Licenses are non-transferable and limited to one device per key
-          unless otherwise specified.
+          DebugClip offers three tiers:
+        </p>
+        <ul className="list-disc pl-5 space-y-2 mt-2">
+          <li><strong className="text-ds-text">Free</strong> — Core error capture and viewing. Prompt preview is blurred; copy/send features are locked.</li>
+          <li><strong className="text-ds-text">Pro ($4 one-time)</strong> — Lifetime access to unlimited copy/send to all LLMs, session history, smart filtering, custom templates, and LocalStorage snapshots.</li>
+          <li><strong className="text-ds-text">Ultimate ($19 one-time)</strong> — Everything in Pro, plus AI answers directly inside the popup using your own API keys (BYOK), support for 4 AI providers (OpenAI, Anthropic, Google, DeepSeek), and future features including MCP server for AI agents.</li>
+        </ul>
+        <p className="mt-2">
+          Pro and Ultimate licenses are one-time purchases granting lifetime access. Licenses are non-transferable and limited to one device per key unless otherwise specified.
         </p>
 
         <h2 className="text-xl font-semibold text-ds-text mt-8">4. Privacy</h2>
@@ -37,8 +42,12 @@ export default function Terms() {
 
         <h2 className="text-xl font-semibold text-ds-text mt-8">5. Refund Policy</h2>
         <p>
-          Pro license purchases are eligible for a full refund within 14 days of purchase
-          if the product does not function as described. Contact support to request a refund.
+          Due to the digital nature of license keys, all sales are generally final once a
+          license key has been delivered and activated. If you experience a technical issue
+          that prevents the product from functioning as described, please contact
+          us at <a href="mailto:oussamazbair9@gmail.com" className="text-ds-blue hover:underline">oussamazbair9@gmail.com</a> within
+          7 days of purchase and we will do our best to resolve the issue or consider a
+          case-by-case exception.
         </p>
 
         <h2 className="text-xl font-semibold text-ds-text mt-8">6. Limitations of Liability</h2>
