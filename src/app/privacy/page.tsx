@@ -49,7 +49,7 @@ export default function Privacy() {
           For privacy inquiries:{" "}
           <a
             href="#"
-            onClick={(e) => { e.preventDefault(); window.location.href = "mailto:" + "support" + "@" + "debugclip.online"; }}
+            onClick={(e) => { e.preventDefault(); window.location.href = "mailto:" + "oussama" + ".zbair9" + "@" + "gmail.com"; }}
             className="text-ds-blue hover:underline"
           >
             Contact Support

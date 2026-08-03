@@ -53,7 +53,7 @@ export default function Terms() {
         <p className="mt-2">
           <a
             href="#"
-            onClick={(e) => { e.preventDefault(); window.location.href = "mailto:" + "support" + "@" + "debugclip.online"; }}
+            onClick={(e) => { e.preventDefault(); window.location.href = "mailto:" + "oussama" + ".zbair9" + "@" + "gmail.com"; }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-ds-border text-ds-blue hover:border-ds-blue/50 hover:bg-ds-surface transition-all text-sm font-medium"
           >
             📧 Contact Support
@@ -86,7 +86,7 @@ export default function Terms() {
           For questions about these Terms:{" "}
           <a
             href="#"
-            onClick={(e) => { e.preventDefault(); window.location.href = "mailto:" + "support" + "@" + "debugclip.online"; }}
+            onClick={(e) => { e.preventDefault(); window.location.href = "mailto:" + "oussama" + ".zbair9" + "@" + "gmail.com"; }}
             className="text-ds-blue hover:underline"
           >
             Contact Support
