@@ -1,3 +1,5 @@
+"use client";
+
 export default function Privacy() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-24">
@@ -44,7 +46,14 @@ export default function Privacy() {
 
         <h2 className="text-xl font-semibold text-ds-text mt-8">Contact</h2>
         <p>
-          For privacy inquiries: <a href="mailto:privacy@debugclip.online" className="text-ds-blue hover:underline">privacy@debugclip.online</a>
+          For privacy inquiries:{" "}
+          <a
+            href="#"
+            onClick={(e) => { e.preventDefault(); window.location.href = "mailto:" + "support" + "@" + "debugclip.online"; }}
+            className="text-ds-blue hover:underline"
+          >
+            Contact Support
+          </a>
         </p>
       </div>
     </main>

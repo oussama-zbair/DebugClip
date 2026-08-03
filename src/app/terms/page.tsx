@@ -1,3 +1,5 @@
+"use client";
+
 export default function Terms() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-24">
@@ -44,10 +46,18 @@ export default function Terms() {
         <p>
           Due to the digital nature of license keys, all sales are generally final once a
           license key has been delivered and activated. If you experience a technical issue
-          that prevents the product from functioning as described, please contact
-          us at <a href="mailto:oussamazbair9@gmail.com" className="text-ds-blue hover:underline">oussamazbair9@gmail.com</a> within
-          7 days of purchase and we will do our best to resolve the issue or consider a
+          that prevents the product from functioning as described, please contact our support
+          within 7 days of purchase and we will do our best to resolve the issue or consider a
           case-by-case exception.
+        </p>
+        <p className="mt-2">
+          <a
+            href="#"
+            onClick={(e) => { e.preventDefault(); window.location.href = "mailto:" + "support" + "@" + "debugclip.online"; }}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-ds-border text-ds-blue hover:border-ds-blue/50 hover:bg-ds-surface transition-all text-sm font-medium"
+          >
+            📧 Contact Support
+          </a>
         </p>
 
         <h2 className="text-xl font-semibold text-ds-text mt-8">6. Limitations of Liability</h2>
@@ -73,7 +83,14 @@ export default function Terms() {
 
         <h2 className="text-xl font-semibold text-ds-text mt-8">9. Contact</h2>
         <p>
-          For questions about these Terms: <a href="mailto:oussamazbair9@gmail.com" className="text-ds-blue hover:underline">oussamazbair9@gmail.com</a>
+          For questions about these Terms:{" "}
+          <a
+            href="#"
+            onClick={(e) => { e.preventDefault(); window.location.href = "mailto:" + "support" + "@" + "debugclip.online"; }}
+            className="text-ds-blue hover:underline"
+          >
+            Contact Support
+          </a>
         </p>
       </div>
     </main>
