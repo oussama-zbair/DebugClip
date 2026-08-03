@@ -3,7 +3,7 @@
 import { Zap, Chrome, Shield, Code2, Globe, Cpu, ArrowRight, Check, Star } from "lucide-react";
 import { motion } from "framer-motion";
 
-const CHROME_STORE_URL = "https://chrome.google.com/webstore/detail/debugclip/EXTENSION_ID";
+const CHROME_STORE_URL = "https://chromewebstore.google.com/detail/mkkbdlmfhnogenmnffaanalbbbbmcfoe";
 
 const fadeUp = {
   initial: { opacity: 0, y: 24 },

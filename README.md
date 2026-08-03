@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://chrome.google.com/webstore/detail/debugclip/YOUR_ID"><img src="https://img.shields.io/badge/Chrome-Web%20Store-6366f1?style=flat-square&logo=googlechrome&logoColor=white" alt="Chrome Web Store"></a>
+  <a href="https://chromewebstore.google.com/detail/mkkbdlmfhnogenmnffaanalbbbbmcfoe"><img src="https://img.shields.io/badge/Chrome-Web%20Store-6366f1?style=flat-square&logo=googlechrome&logoColor=white" alt="Chrome Web Store"></a>
   <a href="https://microsoftedge.microsoft.com/addons/detail/debugclip/YOUR_EDGE_ID"><img src="https://img.shields.io/badge/Edge-Add--ons-38bdf8?style=flat-square&logo=microsoftedge&logoColor=white" alt="Edge Add-ons"></a>
   <img src="https://img.shields.io/badge/Manifest-V3-34d399?style=flat-square" alt="Manifest V3">
   <a href="https://debugclip.online"><img src="https://img.shields.io/badge/Website-debugclip.online-a855f7?style=flat-square" alt="Website"></a>
