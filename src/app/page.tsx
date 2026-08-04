@@ -124,7 +124,7 @@ function Hero() {
             Add to Chrome — Free
           </a>
           <a href="https://microsoftedge.microsoft.com/addons/detail/debugclip/0RDCKGD0GKV6" target="_blank" rel="noopener" className="btn-ghost ">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21.86 17.86q.14 0 .25.12.1.13.1.25-.01.13-.12.25-1.12 1.5-3.06 2.51Q17.09 22 14.82 22q-2.78 0-5.06-1.27-2.28-1.28-3.6-3.56Q4.84 14.9 4.84 12.01q0-1.83.58-3.5.58-1.68 1.63-3.06Q8.1 4.08 9.5 3.12 10.9 2.16 12.56 1.63 14.22 1.1 16 1.1q1.55 0 2.96.44 1.42.43 2.58 1.24 1.17.81 2.01 1.93.84 1.11 1.27 2.47.44 1.36.44 2.82 0 2.06-.87 3.53-.87 1.47-2.35 2.08-1.48.61-3.04.25-1.56-.36-2.52-1.63l-.04.24q-.15.7-.53 1.24-.38.53-.94.84-.55.31-1.22.31-1.37 0-2.27-1.04-.9-1.03-.9-2.56 0-1.6.68-2.95.68-1.34 1.86-2.1 1.18-.77 2.55-.77.89 0 1.56.4.67.4 1 1.13l.16-.93h1.4l-.87 5.04q-.14.74-.14 1.08 0 .6.33.96.32.37.86.37.73 0 1.4-.42.68-.42 1.13-1.18.45-.77.62-1.74.16-.98.16-1.57 0-2.65-1.66-4.37Q17.03 3.84 14.4 3.84q-1.78 0-3.4.84-1.61.83-2.7 2.26-1.08 1.44-1.5 3.17-.41 1.74-.19 3.35.23 1.62 1 3.01.76 1.39 1.95 2.35 1.18.95 2.7 1.36 1.52.4 3.13.15z" fill="currentColor"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><defs><linearGradient id="edge-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0078D4"/><stop offset="50%" stop-color="#0093E9"/><stop offset="100%" stop-color="#50E6A4"/></linearGradient></defs><circle cx="12" cy="12" r="10" fill="url(#edge-g)"/><path d="M7 14.5c0-2.5 2-4.5 5-4.5s4.5 1.5 4.5 3.5c0 1.5-1 2.5-2.5 2.5-1 0-1.5-.5-1.5-1.2 0-.4.2-.8.5-1.1.5-.5.5-1 .2-1.4-.4-.5-1.2-.8-2.2-.8-2 0-3.5 1.5-3.5 3.5 0 2.5 2 4 4.5 4 1.5 0 3-.5 4-1.5" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
             Get for Edge
           </a>
           <a href="#demo" className="btn-ghost">
@@ -139,7 +139,7 @@ function Hero() {
             <Chrome size={14} /> Chrome
           </span>
           <span className="flex items-center gap-1.5">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21.86 17.86q.14 0 .25.12.1.13.1.25-.01.13-.12.25-1.12 1.5-3.06 2.51Q17.09 22 14.82 22q-2.78 0-5.06-1.27-2.28-1.28-3.6-3.56Q4.84 14.9 4.84 12.01q0-1.83.58-3.5.58-1.68 1.63-3.06Q8.1 4.08 9.5 3.12 10.9 2.16 12.56 1.63 14.22 1.1 16 1.1q1.55 0 2.96.44 1.42.43 2.58 1.24 1.17.81 2.01 1.93.84 1.11 1.27 2.47.44 1.36.44 2.82 0 2.06-.87 3.53-.87 1.47-2.35 2.08-1.48.61-3.04.25-1.56-.36-2.52-1.63l-.04.24q-.15.7-.53 1.24-.38.53-.94.84-.55.31-1.22.31-1.37 0-2.27-1.04-.9-1.03-.9-2.56 0-1.6.68-2.95.68-1.34 1.86-2.1 1.18-.77 2.55-.77.89 0 1.56.4.67.4 1 1.13l.16-.93h1.4l-.87 5.04q-.14.74-.14 1.08 0 .6.33.96.32.37.86.37.73 0 1.4-.42.68-.42 1.13-1.18.45-.77.62-1.74.16-.98.16-1.57 0-2.65-1.66-4.37Q17.03 3.84 14.4 3.84q-1.78 0-3.4.84-1.61.83-2.7 2.26-1.08 1.44-1.5 3.17-.41 1.74-.19 3.35.23 1.62 1 3.01.76 1.39 1.95 2.35 1.18.95 2.7 1.36 1.52.4 3.13.15z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><defs><linearGradient id="edge-g2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0078D4"/><stop offset="50%" stop-color="#0093E9"/><stop offset="100%" stop-color="#50E6A4"/></linearGradient></defs><circle cx="12" cy="12" r="10" fill="url(#edge-g2)"/><path d="M7 14.5c0-2.5 2-4.5 5-4.5s4.5 1.5 4.5 3.5c0 1.5-1 2.5-2.5 2.5-1 0-1.5-.5-1.5-1.2 0-.4.2-.8.5-1.1.5-.5.5-1 .2-1.4-.4-.5-1.2-.8-2.2-.8-2 0-3.5 1.5-3.5 3.5 0 2.5 2 4 4.5 4 1.5 0 3-.5 4-1.5" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
             Edge
           </span>
           <span className="opacity-50">Firefox — soon</span>
@@ -209,7 +209,7 @@ function WhatWeCaptureSection() {
     { category: "Console", color: "text-ds-error", bg: "bg-red-500/10", items: [
       { label: "console.error()", desc: "Every error logged by your code or libraries" },
       { label: "console.warn()", desc: "Deprecation notices, misconfigurations" },
-      { label: "Uncaught TypeError", desc: "Accessing properties on null/undefined" },
+      { label: "Uncaught TypeError", desc: "Accessing properties on null or undefined" },
       { label: "Unhandled Promise Rejections", desc: "Async failures without .catch()" },
     ]},
     { category: "Network", color: "text-ds-blue", bg: "bg-blue-500/10", items: [
@@ -315,7 +315,7 @@ function BeforeAfter() {
             ))}
           </div>
           <div className="mt-5 pt-4 border-t border-red-500/10">
-            <p className="text-sm text-ds-textMuted">⏱️ <span className="text-ds-error font-semibold">5–10 minutes</span> per error. 50+ errors/day = hours wasted.</p>
+            <p className="text-sm text-ds-textMuted">⏱️ <span className="text-ds-error font-semibold">5–10 minutes</span> per error. 50+ errors per day = hours wasted.</p>
           </div>
         </motion.div>
 
@@ -353,8 +353,8 @@ function BeforeAfter() {
 // ═══════════════════════════════════════════════════════════════
 function Features() {
   const features = [
-    { icon: <Zap size={24} />, title: "One-Click Capture", desc: "Console errors, warnings, unhandled rejections, failed fetch/XHR — all captured automatically without opening DevTools." },
-    { icon: <Code2 size={24} />, title: "Structured AI Prompts", desc: "Errors compiled into token-dense Markdown with stack traces, request/response payloads, and headers — optimized for LLMs." },
+    { icon: <Zap size={24} />, title: "One-Click Capture", desc: "Console errors, warnings, unhandled rejections, failed fetch and XHR — all captured automatically without opening DevTools." },
+    { icon: <Code2 size={24} />, title: "Structured AI Prompts", desc: "Errors compiled into token-dense Markdown with stack traces, request and response payloads, and headers — optimized for LLMs." },
     { icon: <Globe size={24} />, title: "Works Everywhere", desc: "Localhost, staging, production — any website. No configuration required. Just install and it works." },
     { icon: <Shield size={24} />, title: "Privacy-First", desc: "All processing happens locally in your browser. No data is ever sent to DebugClip servers. BYOK model for API keys." },
     { icon: <Cpu size={24} />, title: "Claude & ChatGPT", desc: "Send your debug context to Claude or ChatGPT with one click. Auto-injection into the LLM input field (Pro)." },
@@ -556,7 +556,7 @@ function Pricing() {
           </p>
           <p className="text-sm text-ds-textMuted mb-5">Lifetime — AI response inside the extension</p>
           <ul className="space-y-2.5 mb-6 flex-1">
-            {["Everything in Pro", "AI answers directly in the popup (BYOK)", "No tab switching — error → fix in 3 seconds", "VS Code companion extension", "MCP server for AI agents (Cursor, Kiro)", "Multi-tab simultaneous capture", "Webhook/Slack notifications", "All future Ultimate features"].map((f, i) => (
+            {["Everything in Pro", "AI answers directly in the popup (BYOK)", "No tab switching — error → fix in 3 seconds", "MCP server for AI agents (Cursor, Kiro)", "Multi-tab simultaneous capture", "Webhook and Slack notifications", "All future Ultimate features"].map((f, i) => (
               <li key={i} className="flex items-start gap-2 text-sm text-ds-textSub">
                 <Check size={16} className="text-ds-purple shrink-0 mt-0.5" />{f}
               </li>
@@ -576,9 +576,9 @@ function Pricing() {
 function FAQ() {
   const faqs = [
     { q: "Does DebugClip send my error data to external servers?", a: "No. All error capture and prompt compilation happens locally in your browser. The only optional network call is license key validation for Pro users. Your page data never leaves your machine." },
-    { q: "How do I fix 'TypeError: Cannot read properties of undefined'?", a: "This common React/JS error means you're accessing a property on a null or undefined value. DebugClip captures the full stack trace showing exactly which line and variable caused it — then sends that context to Claude/ChatGPT for an instant explanation and fix." },
+    { q: "How do I fix 'TypeError: Cannot read properties of undefined'?", a: "This common React and JS error means you're accessing a property on a null or undefined value. DebugClip captures the full stack trace showing exactly which line and variable caused it — then sends that context to Claude or ChatGPT for an instant explanation and fix." },
     { q: "Does it work on localhost?", a: "Yes. DebugClip works on any website — localhost, staging servers, production apps, even file:// URLs (with permission). No configuration needed." },
-    { q: "How do I fix 'CORS error' or 'net::ERR_FAILED'?", a: "Network errors are captured with full request/response details including headers and status codes. DebugClip formats this into a prompt that gives the AI enough context to diagnose your CORS configuration or network issue immediately." },
+    { q: "How do I fix 'CORS error' or 'net::ERR_FAILED'?", a: "Network errors are captured with full request and response details including headers and status codes. DebugClip formats this into a prompt that gives the AI enough context to diagnose your CORS configuration or network issue immediately." },
     { q: "What LLMs are supported?", a: "Currently Claude (claude.ai) and ChatGPT (chatgpt.com). The free tier lets you copy prompts to any AI. The Pro tier auto-injects prompts directly into Claude or ChatGPT's input field." },
     { q: "Is my API key safe?", a: "API keys are stored locally in chrome.storage.local on your device only. They are never transmitted to DebugClip servers — only directly to the LLM provider you choose (Anthropic or OpenAI)." },
     { q: "How do I fix '404 Not Found' API errors?", a: "DebugClip captures the full URL, request method, headers, and response body of failed API calls. The compiled prompt includes all this context so the AI can tell you exactly why your endpoint is returning 404." },
@@ -649,7 +649,7 @@ function Footer() {
         <div className="flex items-center gap-6 text-sm text-ds-textMuted">
           <a href="/privacy/" className="hover:text-ds-text transition-colors">Privacy Policy</a>
           <a href="/terms/" className="hover:text-ds-text transition-colors">Terms of Service</a>
-          <a href="mailto:oussamazbair9@gmail.com" className="hover:text-ds-text transition-colors">Support</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); window.location.href = "mailto:" + "oussama" + ".zbair9" + "@" + "gmail.com"; }} className="hover:text-ds-text transition-colors">Support</a>
           <a href="https://github.com/oussama-zbair/DebugClip" target="_blank" rel="noopener" className="hover:text-ds-text transition-colors">GitHub</a>
         </div>
         <p className="text-sm text-ds-textMuted">© 2026 DebugClip. All rights reserved.</p>

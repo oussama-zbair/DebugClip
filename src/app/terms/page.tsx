@@ -26,8 +26,8 @@ export default function Terms() {
           DebugClip offers three tiers:
         </p>
         <ul className="list-disc pl-5 space-y-2 mt-2">
-          <li><strong className="text-ds-text">Free</strong> — Core error capture and viewing. Prompt preview is blurred; copy/send features are locked.</li>
-          <li><strong className="text-ds-text">Pro ($4 one-time)</strong> — Lifetime access to unlimited copy/send to all LLMs, session history, smart filtering, custom templates, and LocalStorage snapshots.</li>
+          <li><strong className="text-ds-text">Free</strong> — Core error capture and viewing. Prompt preview is blurred; copy and send features are locked.</li>
+          <li><strong className="text-ds-text">Pro ($4 one-time)</strong> — Lifetime access to unlimited copy and send to all LLMs, session history, smart filtering, custom templates, and LocalStorage snapshots.</li>
           <li><strong className="text-ds-text">Ultimate ($19 one-time)</strong> — Everything in Pro, plus AI answers directly inside the popup using your own API keys (BYOK), support for 4 AI providers (OpenAI, Anthropic, Google, DeepSeek), and future features including MCP server for AI agents.</li>
         </ul>
         <p className="mt-2">
