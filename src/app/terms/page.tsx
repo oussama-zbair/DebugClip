@@ -51,16 +51,14 @@ export default function Terms() {
           case-by-case exception.
         </p>
         <p className="mt-2">
-          For refund requests or technical issues, please use your Creem order page to contact us directly:
+          For refund requests or technical issues, please contact support within 7 days of purchase.
         </p>
         <p className="mt-2">
           <a
-            href="https://www.creem.io/orders"
-            target="_blank"
-            rel="noopener"
+            href="mailto:oussama.zbair9@gmail.com"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-ds-border text-ds-blue hover:border-ds-blue/50 hover:bg-ds-surface transition-all text-sm font-medium"
           >
-            📋 View Orders on Creem
+            📧 Contact Support
           </a>
         </p>
 
