@@ -563,7 +563,6 @@ function Pricing() {
             ))}
           </ul>
           <button disabled className="btn-ghost w-full text-center opacity-60 cursor-not-allowed">Coming Soon</button>
-          <p className="text-xs text-ds-textMuted text-center mt-3">Join waitlist, get notified when it launches.</p>
         </motion.div>
       </div>
     </section>
