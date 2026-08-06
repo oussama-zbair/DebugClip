@@ -121,7 +121,7 @@ function Hero() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href={CHROME_STORE_URL} target="_blank" rel="noopener" className="btn-primary">
             <Chrome size={18} />
-            Add to Chrome — Free
+            Add to Chrome, Free
           </a>
           <a href="https://microsoftedge.microsoft.com/addons/detail/debugclip/0RDCKGD0GKV6" target="_blank" rel="noopener" className="btn-ghost ">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><defs><linearGradient id="edge-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0078D4"/><stop offset="50%" stop-color="#0093E9"/><stop offset="100%" stop-color="#50E6A4"/></linearGradient></defs><circle cx="12" cy="12" r="10" fill="url(#edge-g)"/><path d="M7 14.5c0-2.5 2-4.5 5-4.5s4.5 1.5 4.5 3.5c0 1.5-1 2.5-2.5 2.5-1 0-1.5-.5-1.5-1.2 0-.4.2-.8.5-1.1.5-.5.5-1 .2-1.4-.4-.5-1.2-.8-2.2-.8-2 0-3.5 1.5-3.5 3.5 0 2.5 2 4 4.5 4 1.5 0 3-.5 4-1.5" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
@@ -142,15 +142,15 @@ function Hero() {
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><defs><linearGradient id="edge-g2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0078D4"/><stop offset="50%" stop-color="#0093E9"/><stop offset="100%" stop-color="#50E6A4"/></linearGradient></defs><circle cx="12" cy="12" r="10" fill="url(#edge-g2)"/><path d="M7 14.5c0-2.5 2-4.5 5-4.5s4.5 1.5 4.5 3.5c0 1.5-1 2.5-2.5 2.5-1 0-1.5-.5-1.5-1.2 0-.4.2-.8.5-1.1.5-.5.5-1 .2-1.4-.4-.5-1.2-.8-2.2-.8-2 0-3.5 1.5-3.5 3.5 0 2.5 2 4 4.5 4 1.5 0 3-.5 4-1.5" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
             Edge
           </span>
-          <span className="opacity-50">Firefox — soon</span>
-          <span className="opacity-50">Safari — soon</span>
+          <span className="opacity-50">Firefox, soon</span>
+          <span className="opacity-50">Safari, soon</span>
         </motion.div>
 
         {/* Trust signals */}
         <motion.div {...fadeUp} transition={{ delay: 0.4, duration: 0.6 }}
           className="mt-12 flex flex-wrap items-center justify-center gap-5 text-sm text-ds-textMuted">
           <span className="flex items-center gap-1.5">
-            <Shield size={14} className="text-ds-success" /> 100% local — no data leaves your browser
+            <Shield size={14} className="text-ds-success" /> 100% local, no data leaves your browser
           </span>
           <span className="hidden sm:inline">•</span>
           <span className="flex items-center gap-1.5">
@@ -158,7 +158,7 @@ function Hero() {
           </span>
           <span className="hidden sm:inline">•</span>
           <span className="flex items-center gap-1.5">
-            <Zap size={14} className="text-ds-purple" /> Free forever — Pro for $4
+            <Zap size={14} className="text-ds-purple" /> Free forever, Pro for $4
           </span>
         </motion.div>
       </div>
@@ -484,7 +484,7 @@ function Demo() {
         <a href={CHROME_STORE_URL} target="_blank" rel="noopener"
           className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-white transition-all hover:-translate-y-0.5"
           style={{ background: "linear-gradient(135deg, #3884ff, #7c3aed)" }}>
-          <Chrome size={14} /> Try it yourself — Free
+          <Chrome size={14} /> Try it yourself
         </a>
       </motion.div>
     </section>
@@ -531,15 +531,15 @@ function Pricing() {
           <p className="text-3xl font-extrabold mb-1">
             <span className="text-lg line-through text-ds-textMuted font-normal mr-2">$9.99</span>$4
           </p>
-          <p className="text-sm text-ds-textMuted mb-5">Lifetime — pay once, yours forever</p>
+          <p className="text-sm text-ds-textMuted mb-5">Lifetime, pay once, yours forever</p>
           <ul className="space-y-2.5 mb-6">
-            {["Everything in Free — unlimited", "Send to Claude, ChatGPT, Gemini, DeepSeek, Copilot", "Auto-inject prompt into LLM input", "Session history (persist across pages)", "Smart filtering (ignore noisy errors)", "Custom prompt templates", "LocalStorage snapshots", "Priority support & all future updates"].map((f, i) => (
+            {["Everything in Free, unlimited", "Send to Claude, ChatGPT, Gemini, DeepSeek, Copilot", "Auto-inject prompt into LLM input", "Session history (persist across pages)", "Smart filtering (ignore noisy errors)", "Custom prompt templates", "LocalStorage snapshots", "Priority support & all future updates"].map((f, i) => (
               <li key={i} className="flex items-start gap-2 text-sm text-ds-textSub">
                 <Check size={16} className="text-ds-blue shrink-0 mt-0.5" />{f}
               </li>
             ))}
           </ul>
-          <a href="https://www.creem.io/payment/prod_5Y7R83D4t7jGPJltpeEg22" target="_blank" rel="noopener" className="btn-primary w-full text-center">Get Pro — $4 Lifetime</a>
+          <a href="https://www.creem.io/payment/prod_5Y7R83D4t7jGPJltpeEg22" target="_blank" rel="noopener" className="btn-primary w-full text-center">Get Pro, $4 Lifetime</a>
           <p className="text-xs text-ds-textMuted text-center mt-3">Less than a coffee. Saves hours every week.</p>
         </motion.div>
 
@@ -554,16 +554,16 @@ function Pricing() {
           <p className="text-3xl font-extrabold mb-1">
             <span className="text-lg line-through text-ds-textMuted font-normal mr-2">$39</span>$19
           </p>
-          <p className="text-sm text-ds-textMuted mb-5">Lifetime — AI response inside the extension</p>
+          <p className="text-sm text-ds-textMuted mb-5">Lifetime, AI response inside the extension</p>
           <ul className="space-y-2.5 mb-6 flex-1">
-            {["Everything in Pro", "AI answers directly in the popup (BYOK)", "No tab switching — error → fix in 3 seconds", "MCP server for AI agents (Cursor, Kiro)", "Multi-tab simultaneous capture", "Webhook and Slack notifications", "All future Ultimate features"].map((f, i) => (
+            {["Everything in Pro", "AI answers directly in the popup (BYOK)", "No tab switching, error to fix in 3 seconds", "MCP server for AI agents (Cursor, Kiro)", "Multi-tab simultaneous capture", "Webhook and Slack notifications", "All future Ultimate features"].map((f, i) => (
               <li key={i} className="flex items-start gap-2 text-sm text-ds-textSub">
                 <Check size={16} className="text-ds-purple shrink-0 mt-0.5" />{f}
               </li>
             ))}
           </ul>
           <button disabled className="btn-ghost w-full text-center opacity-60 cursor-not-allowed">Coming Soon</button>
-          <p className="text-xs text-ds-textMuted text-center mt-3">Join waitlist — get notified when it launches.</p>
+          <p className="text-xs text-ds-textMuted text-center mt-3">Join waitlist, get notified when it launches.</p>
         </motion.div>
       </div>
     </section>
@@ -620,12 +620,12 @@ function CTA() {
           Stop wasting time on manual debugging
         </h2>
         <p className="text-lg text-ds-textSub mb-8 max-w-lg mx-auto">
-          Join thousands of developers who debug faster with AI.
+          Debug faster with AI-powered error analysis.
           Install DebugClip in 10 seconds.
         </p>
         <a href={CHROME_STORE_URL} target="_blank" rel="noopener" className="btn-primary">
           <Chrome size={18} />
-          Add to Chrome — It&apos;s Free
+          Add to Chrome
         </a>
       </motion.div>
     </section>
@@ -649,7 +649,7 @@ function Footer() {
         <div className="flex items-center gap-6 text-sm text-ds-textMuted">
           <a href="/privacy/" className="hover:text-ds-text transition-colors">Privacy Policy</a>
           <a href="/terms/" className="hover:text-ds-text transition-colors">Terms of Service</a>
-          <a href="#" onClick={(e) => { e.preventDefault(); window.location.href = "mailto:" + "oussama" + ".zbair9" + "@" + "gmail.com"; }} className="hover:text-ds-text transition-colors">Support</a>
+          <a href="mailto:oussama.zbair9@gmail.com" className="hover:text-ds-text transition-colors">Support</a>
           <a href="https://github.com/oussama-zbair/DebugClip" target="_blank" rel="noopener" className="hover:text-ds-text transition-colors">GitHub</a>
         </div>
         <p className="text-sm text-ds-textMuted">© 2026 DebugClip. All rights reserved.</p>
