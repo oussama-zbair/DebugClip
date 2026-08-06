@@ -89,8 +89,7 @@ export default function Terms() {
         <p>
           For questions about these Terms:{" "}
           <a
-            href="#"
-            onClick={(e) => { e.preventDefault(); window.location.href = "mailto:" + "oussama" + ".zbair9" + "@" + "gmail.com"; }}
+            href="mailto:oussama.zbair9@gmail.com"
             className="text-ds-blue hover:underline"
           >
             Contact Support
