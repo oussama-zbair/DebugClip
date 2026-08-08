@@ -123,10 +123,10 @@ function Hero() {
             <Chrome size={18} />
             Add to Chrome, Free
           </a>
-          <a href="https://microsoftedge.microsoft.com/addons/detail/debugclip/0RDCKGD0GKV6" target="_blank" rel="noopener" className="btn-ghost ">
+          <span className="btn-ghost opacity-60 cursor-default">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><defs><linearGradient id="edge-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0078D4"/><stop offset="50%" stop-color="#0093E9"/><stop offset="100%" stop-color="#50E6A4"/></linearGradient></defs><circle cx="12" cy="12" r="10" fill="url(#edge-g)"/><path d="M7 14.5c0-2.5 2-4.5 5-4.5s4.5 1.5 4.5 3.5c0 1.5-1 2.5-2.5 2.5-1 0-1.5-.5-1.5-1.2 0-.4.2-.8.5-1.1.5-.5.5-1 .2-1.4-.4-.5-1.2-.8-2.2-.8-2 0-3.5 1.5-3.5 3.5 0 2.5 2 4 4.5 4 1.5 0 3-.5 4-1.5" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
-            Get for Edge
-          </a>
+            Edge, coming soon
+          </span>
           <a href="#demo" className="btn-ghost">
             ▶ Watch Demo
           </a>
