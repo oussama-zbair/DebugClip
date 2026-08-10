@@ -124,7 +124,7 @@ function Hero() {
             Add to Chrome, Free
           </a>
           <span className="btn-ghost opacity-60 cursor-default">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><defs><linearGradient id="edge-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0078D4"/><stop offset="50%" stop-color="#0093E9"/><stop offset="100%" stop-color="#50E6A4"/></linearGradient></defs><circle cx="12" cy="12" r="10" fill="url(#edge-g)"/><path d="M7 14.5c0-2.5 2-4.5 5-4.5s4.5 1.5 4.5 3.5c0 1.5-1 2.5-2.5 2.5-1 0-1.5-.5-1.5-1.2 0-.4.2-.8.5-1.1.5-.5.5-1 .2-1.4-.4-.5-1.2-.8-2.2-.8-2 0-3.5 1.5-3.5 3.5 0 2.5 2 4 4.5 4 1.5 0 3-.5 4-1.5" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><defs><linearGradient id="edge-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stopColor="#0078D4"/><stop offset="50%" stopColor="#0093E9"/><stop offset="100%" stopColor="#50E6A4"/></linearGradient></defs><circle cx="12" cy="12" r="10" fill="url(#edge-g)"/><path d="M7 14.5c0-2.5 2-4.5 5-4.5s4.5 1.5 4.5 3.5c0 1.5-1 2.5-2.5 2.5-1 0-1.5-.5-1.5-1.2 0-.4.2-.8.5-1.1.5-.5.5-1 .2-1.4-.4-.5-1.2-.8-2.2-.8-2 0-3.5 1.5-3.5 3.5 0 2.5 2 4 4.5 4 1.5 0 3-.5 4-1.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" fill="none"/></svg>
             Edge, coming soon
           </span>
           <a href="#demo" className="btn-ghost">
@@ -139,7 +139,7 @@ function Hero() {
             <Chrome size={14} /> Chrome
           </span>
           <span className="flex items-center gap-1.5">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><defs><linearGradient id="edge-g2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0078D4"/><stop offset="50%" stop-color="#0093E9"/><stop offset="100%" stop-color="#50E6A4"/></linearGradient></defs><circle cx="12" cy="12" r="10" fill="url(#edge-g2)"/><path d="M7 14.5c0-2.5 2-4.5 5-4.5s4.5 1.5 4.5 3.5c0 1.5-1 2.5-2.5 2.5-1 0-1.5-.5-1.5-1.2 0-.4.2-.8.5-1.1.5-.5.5-1 .2-1.4-.4-.5-1.2-.8-2.2-.8-2 0-3.5 1.5-3.5 3.5 0 2.5 2 4 4.5 4 1.5 0 3-.5 4-1.5" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><defs><linearGradient id="edge-g2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stopColor="#0078D4"/><stop offset="50%" stopColor="#0093E9"/><stop offset="100%" stopColor="#50E6A4"/></linearGradient></defs><circle cx="12" cy="12" r="10" fill="url(#edge-g2)"/><path d="M7 14.5c0-2.5 2-4.5 5-4.5s4.5 1.5 4.5 3.5c0 1.5-1 2.5-2.5 2.5-1 0-1.5-.5-1.5-1.2 0-.4.2-.8.5-1.1.5-.5.5-1 .2-1.4-.4-.5-1.2-.8-2.2-.8-2 0-3.5 1.5-3.5 3.5 0 2.5 2 4 4.5 4 1.5 0 3-.5 4-1.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" fill="none"/></svg>
             Edge
           </span>
           <span className="opacity-50">Firefox, soon</span>
@@ -637,21 +637,28 @@ function CTA() {
 function Footer() {
   return (
     <footer className="px-6 py-12 border-t border-ds-border">
-      <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg flex items-center justify-center"
-            style={{ background: "linear-gradient(135deg, #3884ff, #7c3aed)" }}>
-            <Zap size={14} className="text-white" fill="white" />
+      <div className="max-w-5xl mx-auto">
+        {/* Support contact — clearly visible */}
+        <div className="text-center mb-8 pb-8 border-b border-ds-border/50">
+          <p className="text-sm text-ds-textSub mb-1">Customer Support</p>
+          <p className="text-base text-ds-text">oussama.zbair9@gmail.com</p>
+        </div>
+
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-2">
+            <div className="w-7 h-7 rounded-lg flex items-center justify-center"
+              style={{ background: "linear-gradient(135deg, #3884ff, #7c3aed)" }}>
+              <Zap size={14} className="text-white" fill="white" />
+            </div>
+            <span className="font-bold text-ds-text">DebugClip</span>
           </div>
-          <span className="font-bold text-ds-text">DebugClip</span>
+          <div className="flex items-center gap-6 text-sm text-ds-textMuted">
+            <a href="/privacy/" className="hover:text-ds-text transition-colors">Privacy Policy</a>
+            <a href="/terms/" className="hover:text-ds-text transition-colors">Terms of Service</a>
+            <a href="https://github.com/oussama-zbair/DebugClip" target="_blank" rel="noopener" className="hover:text-ds-text transition-colors">GitHub</a>
+          </div>
+          <p className="text-sm text-ds-textMuted">© 2026 DebugClip. All rights reserved.</p>
         </div>
-        <div className="flex items-center gap-6 text-sm text-ds-textMuted">
-          <a href="/privacy/" className="hover:text-ds-text transition-colors">Privacy Policy</a>
-          <a href="/terms/" className="hover:text-ds-text transition-colors">Terms of Service</a>
-          <a href="mailto:oussama.zbair9@gmail.com" className="hover:text-ds-text transition-colors">Support</a>
-          <a href="https://github.com/oussama-zbair/DebugClip" target="_blank" rel="noopener" className="hover:text-ds-text transition-colors">GitHub</a>
-        </div>
-        <p className="text-sm text-ds-textMuted">© 2026 DebugClip. All rights reserved.</p>
       </div>
     </footer>
   );
