@@ -548,7 +548,7 @@ function Pricing() {
         <motion.div {...fadeUp} transition={{ delay: 0.2 }}
           className="card border-ds-purple/30 bg-ds-purple/[0.02] flex flex-col relative overflow-hidden">
           <div className="absolute top-0 right-0 px-3 py-1 text-xs font-bold rounded-bl-xl bg-ds-purple text-white">
-            COMING SOON
+            NEW
           </div>
           <h3 className="text-xl font-bold mb-1">Ultimate</h3>
           <p className="text-3xl font-extrabold mb-1">
@@ -562,7 +562,7 @@ function Pricing() {
               </li>
             ))}
           </ul>
-          <button disabled className="btn-ghost w-full text-center opacity-60 cursor-not-allowed">Coming Soon</button>
+          <a href="https://www.creem.io/payment/prod_nSm4ho5ypRsaLNDddKd8e" target="_blank" rel="noopener" className="btn-primary w-full text-center" style={{ background: "linear-gradient(135deg, #7c3aed, #a855f7)" }}>Get Ultimate, $19 Lifetime</a>
         </motion.div>
       </div>
     </section>
