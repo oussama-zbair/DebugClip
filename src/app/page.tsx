@@ -466,7 +466,7 @@ function Demo() {
           {/* Video */}
           <video
             src="/demo.mp4"
-            autoPlay
+            controls
             loop
             muted
             playsInline
