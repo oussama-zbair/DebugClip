@@ -47,24 +47,33 @@ function GitHubBanner() {
           <span className="text-sm font-semibold text-ds-text hidden sm:inline">DebugClip</span>
         </div>
 
-        {/* Center: message */}
-        <p className="text-xs sm:text-sm text-ds-textSub hidden md:block">
-          Open source landing page — <span className="text-ds-text font-medium">give it a ⭐ if it helps you debug faster</span>
-        </p>
+        {/* Center: nav links */}
+        <nav className="hidden md:flex items-center gap-6 text-sm text-ds-textSub">
+          <a href="#features" className="hover:text-ds-text transition-colors">Features</a>
+          <a href="#pricing" className="hover:text-ds-text transition-colors">Pricing</a>
+          <a href="#demo" className="hover:text-ds-text transition-colors">Demo</a>
+          <a href="#faq" className="hover:text-ds-text transition-colors">FAQ</a>
+        </nav>
 
-        {/* Right: GitHub star button */}
-        <a
-          href="https://github.com/oussama-zbair/debugclip"
-          target="_blank"
-          rel="noopener"
-          className="group flex items-center gap-2 px-3 py-1.5 rounded-lg border border-ds-border bg-ds-surface hover:border-ds-indigo/50 hover:bg-ds-raised/80 transition-all duration-200"
-        >
-          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" className="text-ds-textSub group-hover:text-ds-text transition-colors">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-          </svg>
-          <span className="text-xs font-medium text-ds-textSub group-hover:text-ds-text transition-colors">Star on GitHub</span>
-          <Star size={12} className="text-yellow-400 group-hover:scale-125 transition-transform" fill="currentColor" />
-        </a>
+        {/* Right: actions */}
+        <div className="flex items-center gap-2">
+          <a
+            href="https://github.com/oussama-zbair/debugclip"
+            target="_blank"
+            rel="noopener"
+            className="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-ds-border hover:border-ds-indigo/50 hover:bg-ds-raised/80 transition-all duration-200"
+          >
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" className="text-ds-textSub group-hover:text-ds-text transition-colors">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            <Star size={10} className="text-yellow-400" fill="currentColor" />
+          </a>
+          <a href={CHROME_STORE_URL} target="_blank" rel="noopener"
+            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-white"
+            style={{ background: "linear-gradient(135deg, #3884ff, #7c3aed)" }}>
+            <Chrome size={12} /> Install Free
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -123,10 +132,10 @@ function Hero() {
             <Chrome size={18} />
             Add to Chrome, Free
           </a>
-          <span className="btn-ghost opacity-60 cursor-default">
+          <a href="https://microsoftedge.microsoft.com/addons/detail/debugclip/0RDCKGD0GKV6" target="_blank" rel="noopener" className="btn-ghost">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><defs><linearGradient id="edge-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stopColor="#0078D4"/><stop offset="50%" stopColor="#0093E9"/><stop offset="100%" stopColor="#50E6A4"/></linearGradient></defs><circle cx="12" cy="12" r="10" fill="url(#edge-g)"/><path d="M7 14.5c0-2.5 2-4.5 5-4.5s4.5 1.5 4.5 3.5c0 1.5-1 2.5-2.5 2.5-1 0-1.5-.5-1.5-1.2 0-.4.2-.8.5-1.1.5-.5.5-1 .2-1.4-.4-.5-1.2-.8-2.2-.8-2 0-3.5 1.5-3.5 3.5 0 2.5 2 4 4.5 4 1.5 0 3-.5 4-1.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" fill="none"/></svg>
-            Edge, coming soon
-          </span>
+            Get for Edge
+          </a>
           <a href="#demo" className="btn-ghost">
             ▶ Watch Demo
           </a>
