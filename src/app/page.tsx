@@ -96,7 +96,7 @@ function Hero() {
         <motion.div {...fadeUp} className="mb-6">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-ds-surface border border-ds-border text-sm text-ds-textSub">
             <Zap size={14} className="text-ds-blue" />
-            Chrome extension for developers — install in 10 seconds
+            Browser extension for developers. Install in 10 seconds.
           </span>
         </motion.div>
 
