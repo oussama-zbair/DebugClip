@@ -583,13 +583,16 @@ function Pricing() {
 // ═══════════════════════════════════════════════════════════════
 function FAQ() {
   const faqs = [
-    { q: "Does DebugClip send my error data to external servers?", a: "No. All error capture and prompt compilation happens locally in your browser. The only optional network call is license key validation for Pro users. Your page data never leaves your machine." },
-    { q: "How do I fix 'TypeError: Cannot read properties of undefined'?", a: "This common React and JS error means you're accessing a property on a null or undefined value. DebugClip captures the full stack trace showing exactly which line and variable caused it — then sends that context to Claude or ChatGPT for an instant explanation and fix." },
-    { q: "Does it work on localhost?", a: "Yes. DebugClip works on any website — localhost, staging servers, production apps, even file:// URLs (with permission). No configuration needed." },
-    { q: "How do I fix 'CORS error' or 'net::ERR_FAILED'?", a: "Network errors are captured with full request and response details including headers and status codes. DebugClip formats this into a prompt that gives the AI enough context to diagnose your CORS configuration or network issue immediately." },
-    { q: "What LLMs are supported?", a: "Currently Claude (claude.ai) and ChatGPT (chatgpt.com). The free tier lets you copy prompts to any AI. The Pro tier auto-injects prompts directly into Claude or ChatGPT's input field." },
-    { q: "Is my API key safe?", a: "API keys are stored locally in chrome.storage.local on your device only. They are never transmitted to DebugClip servers — only directly to the LLM provider you choose (Anthropic or OpenAI)." },
-    { q: "How do I fix '404 Not Found' API errors?", a: "DebugClip captures the full URL, request method, headers, and response body of failed API calls. The compiled prompt includes all this context so the AI can tell you exactly why your endpoint is returning 404." },
+    { q: "Does DebugClip send my data to external servers?", a: "No. All error capture and prompt compilation happens locally in your browser. The only network call is optional license key validation. Your page data, errors, and API keys never leave your machine." },
+    { q: "What is the difference between Free, Pro, and Ultimate?", a: "Free captures and displays all errors. Pro ($4 lifetime) adds sending to AI, session history, smart filtering, error grouping, and 11 templates. Ultimate ($19 lifetime) adds AI answers directly inside the popup using your own API keys with 6 providers." },
+    { q: "Which AI providers are supported?", a: "For sending prompts (Pro): Claude, ChatGPT, Gemini, DeepSeek, Copilot, Mistral, and Groq. For in-popup AI responses (Ultimate): OpenAI, Anthropic, Google Gemini, Groq, DeepSeek, and Mistral via your own API keys." },
+    { q: "Is this a subscription?", a: "No. Both Pro and Ultimate are one-time payments. Pay once, use forever. No recurring charges." },
+    { q: "Does it work on localhost?", a: "Yes. DebugClip works on any website including localhost, staging servers, production apps, and any framework. No configuration needed." },
+    { q: "Is my API key safe?", a: "API keys are stored locally in chrome.storage.local on your device only. They are never sent to DebugClip servers. Keys are transmitted only to the AI provider you choose when you click Ask AI." },
+    { q: "What are prompt templates?", a: "Templates control how your errors are formatted for AI. Choose React, Vue, Angular, Node.js, TypeScript, Security, Performance, or Quick Fix. Each gives AI different context so the answers match your stack." },
+    { q: "What is error grouping?", a: "When the same error repeats (like a broken API call in a loop), Pro and Ultimate collapse them into one entry with a count badge instead of showing 50 identical lines. The AI prompt also notes the frequency." },
+    { q: "Does it work on Edge?", a: "Yes. DebugClip is available on both Chrome Web Store and Microsoft Edge Add-ons. Same extension, same features." },
+    { q: "Can I upgrade from Pro to Ultimate later?", a: "Yes. Buy an Ultimate key and enter it in Settings. The extension detects the new tier automatically. Your Pro key stays valid but Ultimate features will unlock." },
   ];
 
   return (
