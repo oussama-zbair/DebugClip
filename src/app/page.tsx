@@ -671,6 +671,13 @@ function Footer() {
           </div>
           <p className="text-sm text-ds-textMuted">© 2026 DebugClip. All rights reserved.</p>
         </div>
+
+        {/* Badges */}
+        <div className="flex items-center justify-center mt-8 pt-6 border-t border-ds-border/30">
+          <a href="https://launchbuff.com/products/debugclip-m6qt2b" target="_blank" rel="noopener noreferrer" title="Featured on LaunchBuff">
+            <img src="https://launchbuff.com/badge-featured-dark.svg" alt="Featured on LaunchBuff" width="180" height="56" className="opacity-70 hover:opacity-100 transition-opacity" />
+          </a>
+        </div>
       </div>
     </footer>
   );
