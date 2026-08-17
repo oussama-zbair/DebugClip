@@ -673,9 +673,12 @@ function Footer() {
         </div>
 
         {/* Badges */}
-        <div className="flex items-center justify-center mt-8 pt-6 border-t border-ds-border/30">
+        <div className="flex items-center justify-center gap-4 mt-8 pt-6 border-t border-ds-border/30 flex-wrap">
+          <a href="https://www.producthunt.com/products/debugclip?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-debugclip" target="_blank" rel="noopener noreferrer">
+            <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1222865&theme=dark&t=1787000789676" alt="DebugClip on Product Hunt" width="180" height="40" className="opacity-70 hover:opacity-100 transition-opacity" />
+          </a>
           <a href="https://launchbuff.com/products/debugclip-m6qt2b" target="_blank" rel="noopener noreferrer" title="Featured on LaunchBuff">
-            <img src="https://launchbuff.com/badge-featured-dark.svg" alt="Featured on LaunchBuff" width="180" height="56" className="opacity-70 hover:opacity-100 transition-opacity" />
+            <img src="https://launchbuff.com/badge-featured-dark.svg" alt="Featured on LaunchBuff" width="180" height="40" className="opacity-70 hover:opacity-100 transition-opacity" />
           </a>
         </div>
       </div>
