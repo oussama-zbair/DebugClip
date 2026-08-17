@@ -76,7 +76,7 @@
   <a href="https://chromewebstore.google.com/detail/mkkbdlmfhnogenmnffaanalbbbbmcfoe">
     <img src="https://img.shields.io/badge/Chrome-Install%20Free-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome"/>
   </a>
-  <a href="[https://microsoftedge.microsoft.com/addons/detail/debugclip/0RDCKGD0GKV6](https://microsoftedge.microsoft.com/addons/detail/debugclip/facbdiihlbpfebhmbeipmjgigahmfkao)">
+  <a href="https://microsoftedge.microsoft.com/addons/detail/debugclip/facbdiihlbpfebhmbeipmjgigahmfkao">
     <img src="https://img.shields.io/badge/Edge-Install%20Free-38bdf8?style=for-the-badge&logo=microsoftedge&logoColor=white" alt="Edge"/>
   </a>
 </p>
