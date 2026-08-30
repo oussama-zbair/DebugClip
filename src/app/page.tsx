@@ -683,6 +683,9 @@ function Footer() {
           <a href="https://sellwithboost.com/startups/debugclip" target="_blank" rel="noopener noreferrer" title="Listed on Sell With Boost">
             <img src="https://sellwithboost.com/badge/listing-dark.svg" alt="Listed on Sell With Boost" height="40" className="w-auto opacity-70 hover:opacity-100 transition-opacity" />
           </a>
+          <a href="https://launchnest.io/p/debugclip" target="_blank" rel="noopener noreferrer" title="DebugClip on LaunchNest">
+            <img src="https://launchnest.io/badge/debugclip.svg?variant=listed" alt="DebugClip on LaunchNest" width="220" height="56" className="opacity-70 hover:opacity-100 transition-opacity" />
+          </a>
         </div>
       </div>
     </footer>
