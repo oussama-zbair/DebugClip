@@ -680,7 +680,7 @@ function Footer() {
           <a href="https://launchbuff.com/products/debugclip-m6qt2b" target="_blank" rel="noopener noreferrer" title="Featured on LaunchBuff">
             <img src="https://launchbuff.com/badge-featured-dark.svg" alt="Featured on LaunchBuff" width="180" height="40" className="opacity-70 hover:opacity-100 transition-opacity" />
           </a>
-          <a href="https://sellwithboost.com" target="_blank" rel="noopener noreferrer" title="Listed on Sell With Boost">
+          <a href="https://sellwithboost.com/startups/debugclip" target="_blank" rel="noopener noreferrer" title="Listed on Sell With Boost">
             <img src="https://sellwithboost.com/badge/listing-dark.svg" alt="Listed on Sell With Boost" height="40" className="w-auto opacity-70 hover:opacity-100 transition-opacity" />
           </a>
         </div>
