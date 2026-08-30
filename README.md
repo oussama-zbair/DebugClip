@@ -8,6 +8,7 @@
   <img src="https://img.shields.io/badge/Version-0.2.2-34d399?style=flat-square" alt="Version">
   <img src="https://img.shields.io/badge/Manifest-V3-34d399?style=flat-square" alt="Manifest V3">
   <a href="https://debugclip.online"><img src="https://img.shields.io/badge/Website-debugclip.online-a855f7?style=flat-square" alt="Website"></a>
+  <a href="https://sellwithboost.com" target="_blank" rel="noopener noreferrer"><img src="https://sellwithboost.com/badge/listing-dark.svg" alt="Listed on Sell With Boost" style="height: 20px; width: auto;" /></a>
 </p>
 
 <h3 align="center">
