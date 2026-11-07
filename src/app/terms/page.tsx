@@ -26,9 +26,9 @@ export default function Terms() {
           DebugClip offers three tiers:
         </p>
         <ul className="list-disc pl-5 space-y-2 mt-2">
-          <li><strong className="text-ds-text">Free</strong> — Core error capture and viewing. Prompt preview is blurred; copy and send features are locked.</li>
-          <li><strong className="text-ds-text">Pro ($4 one-time)</strong> — Lifetime access to unlimited copy and send to all LLMs, session history, smart filtering, custom templates, and LocalStorage snapshots.</li>
-          <li><strong className="text-ds-text">Ultimate ($19 one-time)</strong> — Everything in Pro, plus AI answers directly inside the popup using your own API keys (BYOK), support for 4 AI providers (OpenAI, Anthropic, Google, DeepSeek), and future features including MCP server for AI agents.</li>
+          <li><strong className="text-ds-text">Free</strong>: Core error capture and viewing. Prompt preview is blurred; copy and send features are locked.</li>
+          <li><strong className="text-ds-text">Pro ($4 one-time)</strong>: Lifetime access to unlimited copy and send to all LLMs, session history, smart filtering, custom templates, and LocalStorage snapshots.</li>
+          <li><strong className="text-ds-text">Ultimate ($19 one-time)</strong>: Everything in Pro, plus AI answers directly inside the popup using your own API keys (BYOK), support for 4 AI providers (OpenAI, Anthropic, Google, DeepSeek), and future features including MCP server for AI agents.</li>
         </ul>
         <p className="mt-2">
           Pro and Ultimate licenses are one-time purchases granting lifetime access. Licenses are non-transferable and limited to one device per key unless otherwise specified.
@@ -55,10 +55,10 @@ export default function Terms() {
         </p>
         <p className="mt-2">
           <a
-            href="mailto:oussama.zbair9@gmail.com"
+            href="mailto:support@debugclip.online"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-ds-border text-ds-blue hover:border-ds-blue/50 hover:bg-ds-surface transition-all text-sm font-medium"
           >
-            📧 Contact Support
+            📧 support@debugclip.online
           </a>
         </p>
 
@@ -87,10 +87,10 @@ export default function Terms() {
         <p>
           For questions about these Terms:{" "}
           <a
-            href="mailto:oussama.zbair9@gmail.com"
+            href="mailto:support@debugclip.online"
             className="text-ds-blue hover:underline"
           >
-            Contact Support
+            support@debugclip.online
           </a>
         </p>
       </div>

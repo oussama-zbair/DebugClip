@@ -111,7 +111,7 @@ function Hero() {
         <motion.p {...fadeUp} transition={{ delay: 0.2, duration: 0.6 }}
           className="text-lg sm:text-xl text-ds-textSub max-w-2xl mx-auto mb-10 leading-relaxed">
           DebugClip catches console errors, failed network requests, and CSP violations
-          from any tab — then formats them into a clean, structured prompt you can
+          from any tab, then formats them into a clean, structured prompt you can
           paste into Claude or ChatGPT. No more manual copy-pasting from DevTools.
         </motion.p>
 
@@ -195,7 +195,7 @@ function Problem() {
       <div className="grid md:grid-cols-3 gap-6">
         {[
           { icon: "😩", title: "Context switching kills flow", desc: "Jumping between DevTools, your editor, and an AI chat breaks your concentration and wastes minutes every cycle." },
-          { icon: "📋", title: "Copy-paste loses context", desc: "Raw error messages without headers, request bodies, or stack traces give AI incomplete information — leading to useless answers." },
+          { icon: "📋", title: "Copy-paste loses context", desc: "Raw error messages without headers, request bodies, or stack traces give AI incomplete information, which leads to useless answers." },
           { icon: "⏱️", title: "Manual formatting is tedious", desc: "Structuring error data into a good prompt takes effort. Most developers don't bother, so the AI gives generic responses." },
         ].map((item, i) => (
           <motion.div key={i} {...fadeUp} transition={{ delay: i * 0.1, duration: 0.6 }}
@@ -211,7 +211,7 @@ function Problem() {
 }
 
 // ═══════════════════════════════════════════════════════════════
-// WHAT WE CAPTURE — detailed visual grid
+// WHAT WE CAPTURE: detailed visual grid
 // ═══════════════════════════════════════════════════════════════
 function WhatWeCaptureSection() {
   const captures = [
@@ -242,7 +242,7 @@ function WhatWeCaptureSection() {
           Everything DevTools shows. <span className="gradient-text">Without opening DevTools.</span>
         </h2>
         <p className="text-lg text-ds-textSub max-w-2xl mx-auto">
-          DebugClip captures the same errors, warnings, and network failures you see in Chrome DevTools — 
+          DebugClip captures the same errors, warnings, and network failures you see in Chrome DevTools, 
           but presents them in a clean dashboard with one-click AI analysis.
         </p>
       </motion.div>
@@ -288,7 +288,7 @@ function WhatWeCaptureSection() {
 }
 
 // ═══════════════════════════════════════════════════════════════
-// BEFORE vs AFTER — the pain vs the solution
+// BEFORE vs AFTER: the pain vs the solution
 // ═══════════════════════════════════════════════════════════════
 function BeforeAfter() {
   return (
@@ -311,11 +311,11 @@ function BeforeAfter() {
               { step: "1", text: "See error in console → squint at 200-line stack trace" },
               { step: "2", text: "Open ChatGPT in a new tab" },
               { step: "3", text: "Go back to DevTools, copy the error message" },
-              { step: "4", text: "Paste it into ChatGPT — no stack trace, no context" },
+              { step: "4", text: "Paste it into ChatGPT: no stack trace, no context" },
               { step: "5", text: "AI gives you a generic 'maybe try this' response" },
               { step: "6", text: "Go back to DevTools, copy more context (headers, body...)" },
               { step: "7", text: "Paste again, re-explain the problem" },
-              { step: "8", text: "Repeat for each error — lose 5-10 min per bug" },
+              { step: "8", text: "Repeat for each error and lose 5-10 min per bug" },
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
                 <span className="text-xs font-bold text-ds-error/60 bg-red-500/10 w-5 h-5 rounded flex items-center justify-center shrink-0 mt-0.5">{item.step}</span>
@@ -336,12 +336,12 @@ function BeforeAfter() {
           </div>
           <div className="space-y-4">
             {[
-              { step: "1", text: "Browse your app — DebugClip runs silently in the background" },
+              { step: "1", text: "Browse your app while DebugClip runs silently in the background" },
               { step: "2", text: "See the badge count: '3 errors detected'" },
-              { step: "3", text: "Click DebugClip — all errors + network failures in one view" },
-              { step: "4", text: "Click 'Send to Claude' — structured Markdown prompt compiled" },
+              { step: "3", text: "Click DebugClip: all errors + network failures in one view" },
+              { step: "4", text: "Click 'Send to Claude': structured Markdown prompt compiled" },
               { step: "5", text: "AI gets full stack trace, headers, request body, status code" },
-              { step: "6", text: "Get a specific, actionable fix — not a generic answer" },
+              { step: "6", text: "Get a specific, actionable fix, not a generic answer" },
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
                 <span className="text-xs font-bold text-white w-5 h-5 rounded flex items-center justify-center shrink-0 mt-0.5" style={{ background: "linear-gradient(135deg, #3884ff, #7c3aed)" }}>{item.step}</span>
@@ -362,9 +362,9 @@ function BeforeAfter() {
 // ═══════════════════════════════════════════════════════════════
 function Features() {
   const features = [
-    { icon: <Zap size={24} />, title: "One-Click Capture", desc: "Console errors, warnings, unhandled rejections, failed fetch and XHR — all captured automatically without opening DevTools." },
-    { icon: <Code2 size={24} />, title: "Structured AI Prompts", desc: "Errors compiled into token-dense Markdown with stack traces, request and response payloads, and headers — optimized for LLMs." },
-    { icon: <Globe size={24} />, title: "Works Everywhere", desc: "Localhost, staging, production — any website. No configuration required. Just install and it works." },
+    { icon: <Zap size={24} />, title: "One-Click Capture", desc: "Console errors, warnings, unhandled rejections, failed fetch and XHR, all captured automatically without opening DevTools." },
+    { icon: <Code2 size={24} />, title: "Structured AI Prompts", desc: "Errors compiled into token-dense Markdown with stack traces, request and response payloads, and headers, optimized for LLMs." },
+    { icon: <Globe size={24} />, title: "Works Everywhere", desc: "Localhost, staging, production, any website. No configuration required. Just install and it works." },
     { icon: <Shield size={24} />, title: "Privacy-First", desc: "All processing happens locally in your browser. No data is ever sent to DebugClip servers. BYOK model for API keys." },
     { icon: <Cpu size={24} />, title: "Claude & ChatGPT", desc: "Send your debug context to Claude or ChatGPT with one click. Auto-injection into the LLM input field (Pro)." },
     { icon: <Chrome size={24} />, title: "Native Chrome Extension", desc: "Manifest V3 compliant. Minimal permissions. Runs in the background with zero performance overhead." },
@@ -446,7 +446,7 @@ function Demo() {
           See <span className="gradient-text">DebugClip</span> in action
         </h2>
         <p className="text-lg text-ds-textSub max-w-xl mx-auto">
-          Real errors. Real websites. No setup, no edits — just install and go.
+          Real errors. Real websites. No setup, no edits. Just install and go.
         </p>
       </motion.div>
 
@@ -467,7 +467,7 @@ function Demo() {
             </div>
             <div className="flex-1 flex justify-center">
               <div className="px-4 py-1 rounded-md bg-ds-bg/80 border border-ds-border/50 text-xs text-ds-textMuted font-mono">
-                debugclip — live demo
+                debugclip: live demo
               </div>
             </div>
           </div>
@@ -488,7 +488,7 @@ function Demo() {
       <motion.div {...fadeUp} transition={{ delay: 0.3 }}
         className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
         <p className="text-sm text-ds-textMuted">
-          📹 Live recording on real websites — no simulations
+          📹 Live recording on real websites, no simulations
         </p>
         <a href={CHROME_STORE_URL} target="_blank" rel="noopener"
           className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-white transition-all hover:-translate-y-0.5"
@@ -650,10 +650,10 @@ function Footer() {
   return (
     <footer className="px-6 py-12 border-t border-ds-border">
       <div className="max-w-5xl mx-auto">
-        {/* Support contact — clearly visible */}
+        {/* Support contact, clearly visible */}
         <div className="text-center mb-8 pb-8 border-b border-ds-border/50">
           <p className="text-sm text-ds-textSub mb-1">Customer Support</p>
-          <p className="text-base text-ds-text">oussama.zbair9@gmail.com</p>
+          <a href="mailto:support@debugclip.online" className="text-base text-ds-text hover:text-ds-blue transition-colors">support@debugclip.online</a>
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">

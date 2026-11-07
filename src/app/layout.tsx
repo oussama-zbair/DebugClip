@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   keywords: "Chrome extension, debug tools, AI debugging, browser errors, console errors, network failures, DevTools, web development",
   authors: [{ name: "DebugClip" }],
   openGraph: {
-    title: "DebugClip — Chrome Extension for AI-Powered Debugging",
+    title: "DebugClip | Chrome Extension for AI-Powered Debugging",
     description: "Capture browser errors and get AI fixes in one click. Free Chrome extension for developers.",
     url: "https://debugclip.online",
     siteName: "DebugClip",
@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           ],
           "url": "https://debugclip.online",
           "downloadUrl": "https://chromewebstore.google.com/detail/mkkbdlmfhnogenmnffaanalbbbbmcfoe",
-          "softwareVersion": "0.2.2",
+          "softwareVersion": "0.2.4",
           "author": { "@type": "Person", "name": "Oussama Zbair" }
         })}} />
       </head>
