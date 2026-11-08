@@ -4,7 +4,8 @@ import { Zap, Chrome, Shield, Code2, Globe, Cpu, ArrowRight, Check, Star } from 
 import { motion } from "framer-motion";
 import SaleBanner from "@/components/SaleBanner";
 import { useSaleActive } from "@/components/useSaleActive";
-import { SALE, withSaleCode } from "@/lib/sale";
+import { SALE } from "@/lib/sale";
+import CopyCodeButton from "@/components/CopyCodeButton";
 
 const CHROME_STORE_URL = "https://chromewebstore.google.com/detail/mkkbdlmfhnogenmnffaanalbbbbmcfoe";
 
@@ -566,10 +567,16 @@ function Pricing() {
           </div>
           <h3 className="text-xl font-bold mb-1">Ultimate</h3>
           {saleActive ? (
+            <>
             <p className="text-3xl font-extrabold mb-1">
               <span className="text-lg line-through text-ds-textMuted font-normal mr-2">${SALE.regularPrice}</span>${SALE.salePrice.toFixed(2)}
               <span className="ml-2 align-middle text-xs font-semibold px-2 py-0.5 rounded-full bg-ds-purple/20 text-ds-purple">{SALE.name}</span>
             </p>
+            <p className="mb-1 text-xs text-ds-textMuted">
+              Code{" "}
+              <code className="rounded-md border border-ds-purple/30 bg-ds-purple/10 px-1.5 py-0.5 font-mono font-semibold text-ds-text">{SALE.code}</code>
+            </p>
+            </>
           ) : (
             <p className="text-3xl font-extrabold mb-1">
               <span className="text-lg line-through text-ds-textMuted font-normal mr-2">$39</span>$19
@@ -583,7 +590,14 @@ function Pricing() {
               </li>
             ))}
           </ul>
-          <a href={saleActive ? withSaleCode(SALE.ultimateUrl) : SALE.ultimateUrl} target="_blank" rel="noopener" className="btn-primary w-full text-center" style={{ background: "linear-gradient(135deg, #7c3aed, #a855f7)" }}>{saleActive ? `Get Ultimate, $${SALE.salePrice.toFixed(2)} Lifetime` : "Get Ultimate, $19 Lifetime"}</a>
+          {saleActive ? (
+            <>
+              <CopyCodeButton code={SALE.code} href={SALE.ultimateUrl} label={`Copy code and buy, $${SALE.salePrice.toFixed(2)}`} variant="card" />
+              <p className="text-xs text-ds-textMuted text-center mt-3">Paste the code in the discount field at checkout.</p>
+            </>
+          ) : (
+            <a href={SALE.ultimateUrl} target="_blank" rel="noopener" className="btn-primary w-full text-center" style={{ background: "linear-gradient(135deg, #7c3aed, #a855f7)" }}>Get Ultimate, $19 Lifetime</a>
+          )}
         </motion.div>
       </div>
     </section>

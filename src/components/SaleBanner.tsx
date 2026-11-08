@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
-import { SALE, isSaleActive, withSaleCode } from "@/lib/sale";
+import { SALE, isSaleActive } from "@/lib/sale";
+import CopyCodeButton from "./CopyCodeButton";
 
 const DISMISS_KEY = "debugclip-sale-dismissed";
 
@@ -37,19 +38,19 @@ export default function SaleBanner() {
       className="border-b border-white/10 text-white"
       style={{ background: "linear-gradient(135deg, #1e1b4b, #4c1d95)" }}
     >
-      <div className="max-w-5xl mx-auto px-4 py-2 flex items-center gap-3">
-        <p className="flex-1 text-sm leading-snug text-center sm:text-left">
-          {SALE.name}: {SALE.percentOff}% off DebugClip Ultimate, ${SALE.salePrice.toFixed(2)} lifetime
-          (regularly ${SALE.regularPrice}). Ends {SALE.endsLabel}.
-        </p>
-        <a
-          href={withSaleCode(SALE.ultimateUrl)}
-          target="_blank"
-          rel="noopener"
-          className="shrink-0 px-3 py-1.5 rounded-lg bg-white text-ds-bg text-xs font-semibold hover:bg-ds-text focus:outline-none focus-visible:ring-2 focus-visible:ring-ds-blue focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-950"
-        >
-          Get the deal
-        </a>
+      <div className="max-w-5xl mx-auto px-4 py-2 flex items-start sm:items-center gap-3">
+        <div className="flex-1 min-w-0 flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-x-3 gap-y-2">
+          <p className="text-sm leading-snug">
+            {SALE.name}: {SALE.percentOff}% off DebugClip Ultimate, ${SALE.salePrice.toFixed(2)} lifetime
+            (regularly ${SALE.regularPrice}). Ends {SALE.endsLabel}.{" "}
+            <code className="ml-0.5 inline-block rounded-md border border-white/25 bg-white/10 px-1.5 py-0.5 font-mono text-xs font-semibold tracking-wide">
+              {SALE.code}
+            </code>
+          </p>
+          <div className="self-start">
+            <CopyCodeButton code={SALE.code} href={SALE.ultimateUrl} label="Copy code and buy" variant="banner" />
+          </div>
+        </div>
         <button
           type="button"
           onClick={dismiss}

@@ -19,10 +19,3 @@ export function isSaleActive(now: Date): boolean {
   const t = now.getTime();
   return t >= Date.parse(SALE.startsAt) && t <= Date.parse(SALE.endsAt);
 }
-
-/** Returns the URL with the sale discount code pre-applied (Creem discount_code param). */
-export function withSaleCode(url: string): string {
-  if (/[?&]discount_code=/.test(url)) return url;
-  const sep = url.includes("?") ? "&" : "?";
-  return `${url}${sep}discount_code=${encodeURIComponent(SALE.code)}`;
-}
