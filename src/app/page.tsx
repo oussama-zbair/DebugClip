@@ -2,6 +2,9 @@
 
 import { Zap, Chrome, Shield, Code2, Globe, Cpu, ArrowRight, Check, Star } from "lucide-react";
 import { motion } from "framer-motion";
+import SaleBanner from "@/components/SaleBanner";
+import { useSaleActive } from "@/components/useSaleActive";
+import { SALE, withSaleCode } from "@/lib/sale";
 
 const CHROME_STORE_URL = "https://chromewebstore.google.com/detail/mkkbdlmfhnogenmnffaanalbbbbmcfoe";
 
@@ -15,6 +18,7 @@ const fadeUp = {
 export default function Home() {
   return (
     <main className="overflow-hidden">
+      <SaleBanner />
       <GitHubBanner />
       <Hero />
       <Problem />
@@ -504,6 +508,7 @@ function Demo() {
 // PRICING
 // ═══════════════════════════════════════════════════════════════
 function Pricing() {
+  const saleActive = useSaleActive();
   return (
     <section className="px-6 py-24 max-w-5xl mx-auto" id="pricing">
       <motion.div {...fadeUp} className="text-center mb-16">
@@ -560,9 +565,16 @@ function Pricing() {
             NEW
           </div>
           <h3 className="text-xl font-bold mb-1">Ultimate</h3>
-          <p className="text-3xl font-extrabold mb-1">
-            <span className="text-lg line-through text-ds-textMuted font-normal mr-2">$39</span>$19
-          </p>
+          {saleActive ? (
+            <p className="text-3xl font-extrabold mb-1">
+              <span className="text-lg line-through text-ds-textMuted font-normal mr-2">${SALE.regularPrice}</span>${SALE.salePrice.toFixed(2)}
+              <span className="ml-2 align-middle text-xs font-semibold px-2 py-0.5 rounded-full bg-ds-purple/20 text-ds-purple">{SALE.name}</span>
+            </p>
+          ) : (
+            <p className="text-3xl font-extrabold mb-1">
+              <span className="text-lg line-through text-ds-textMuted font-normal mr-2">$39</span>$19
+            </p>
+          )}
           <p className="text-sm text-ds-textMuted mb-5">Lifetime, AI response inside the extension</p>
           <ul className="space-y-2.5 mb-6 flex-1">
             {["Everything in Pro", "AI answers directly in the popup (BYOK)", "No tab switching, error to fix in 3 seconds", "MCP server for AI agents (Cursor, Kiro)", "Multi-tab simultaneous capture", "Webhook and Slack notifications", "All future Ultimate features"].map((f, i) => (
@@ -571,7 +583,7 @@ function Pricing() {
               </li>
             ))}
           </ul>
-          <a href="https://www.creem.io/payment/prod_nSm4ho5ypRsaLNDddKd8e" target="_blank" rel="noopener" className="btn-primary w-full text-center" style={{ background: "linear-gradient(135deg, #7c3aed, #a855f7)" }}>Get Ultimate, $19 Lifetime</a>
+          <a href={saleActive ? withSaleCode(SALE.ultimateUrl) : SALE.ultimateUrl} target="_blank" rel="noopener" className="btn-primary w-full text-center" style={{ background: "linear-gradient(135deg, #7c3aed, #a855f7)" }}>{saleActive ? `Get Ultimate, $${SALE.salePrice.toFixed(2)} Lifetime` : "Get Ultimate, $19 Lifetime"}</a>
         </motion.div>
       </div>
     </section>
