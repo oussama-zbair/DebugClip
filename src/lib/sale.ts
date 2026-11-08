@@ -4,7 +4,7 @@
 
 export const SALE = {
   name: "Black Friday",
-  startsAt: "2026-11-24T00:00:00Z",
+  startsAt: "2026-11-08T00:00:00Z",
   endsAt: "2026-12-01T23:59:59Z",
   code: "DEBUGCLIP50",
   percentOff: 50,
