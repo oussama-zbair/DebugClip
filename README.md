@@ -116,7 +116,7 @@
 
 ## Support
 
-Customer support: oussama.zbair9@gmail.com
+Customer support: support@debugclip.online
 
 <p>
   <a href="https://paypal.me/oussamazbair9"><img src="https://img.shields.io/badge/PayPal-Donate-0070ba?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal"/></a>

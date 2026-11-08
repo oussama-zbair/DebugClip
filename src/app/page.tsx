@@ -667,6 +667,7 @@ function Footer() {
           <div className="flex items-center gap-6 text-sm text-ds-textMuted">
             <a href="/privacy/" className="hover:text-ds-text transition-colors">Privacy Policy</a>
             <a href="/terms/" className="hover:text-ds-text transition-colors">Terms of Service</a>
+            <a href="/support/" className="hover:text-ds-text transition-colors">Support</a>
             <a href="https://github.com/oussama-zbair/DebugClip" target="_blank" rel="noopener" className="hover:text-ds-text transition-colors">GitHub</a>
           </div>
           <p className="text-sm text-ds-textMuted">© 2026 DebugClip. All rights reserved.</p>

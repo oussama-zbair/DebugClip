@@ -206,7 +206,7 @@ export default function ThankYou() {
         {/* Support note */}
         <p className="text-xs text-ds-textMuted">
           <Mail size={12} className="inline mr-1" />
-          Need help? Contact <a href="mailto:oussama.zbair9@gmail.com" className="text-ds-blue hover:underline">oussama.zbair9@gmail.com</a>
+          Need help? Contact <a href="mailto:support@debugclip.online" className="text-ds-blue hover:underline">support@debugclip.online</a>
         </p>
       </motion.div>
     </main>
