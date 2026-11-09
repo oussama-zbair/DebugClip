@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/mkkbdlmfhnogenmnffaanalbbbbmcfoe"><img src="https://img.shields.io/badge/Chrome-Web%20Store-6366f1?style=flat-square&logo=googlechrome&logoColor=white" alt="Chrome Web Store"></a>
   <a href="https://microsoftedge.microsoft.com/addons/detail/debugclip/facbdiihlbpfebhmbeipmjgigahmfkao"><img src="https://img.shields.io/badge/Edge-Add--ons-38bdf8?style=flat-square&logo=microsoftedge&logoColor=white" alt="Edge Add-ons"></a>
-  <img src="https://img.shields.io/badge/Version-0.2.2-34d399?style=flat-square" alt="Version">
+  <img src="https://img.shields.io/badge/Version-0.2.4-34d399?style=flat-square" alt="Version">
   <img src="https://img.shields.io/badge/Manifest-V3-34d399?style=flat-square" alt="Manifest V3">
   <a href="https://debugclip.online"><img src="https://img.shields.io/badge/Website-debugclip.online-a855f7?style=flat-square" alt="Website"></a>
   <a href="https://sellwithboost.com" target="_blank" rel="noopener noreferrer"><img src="https://sellwithboost.com/badge/listing-dark.svg" alt="Listed on Sell With Boost" style="height: 20px; width: auto;" /></a>
@@ -131,4 +131,5 @@ Customer support: support@debugclip.online
 |---------|--------|----------|
 | 0.1.0 | Released | Error capture, badge, 5 templates, 5 LLMs |
 | 0.2.2 | Released | Ultimate tier, BYOK AI (6 providers), 11 templates, 7 LLMs, error grouping, markdown responses |
+| 0.2.4 | Released | Welcome page after install, optional feedback page after uninstall, support page |
 | 0.3.0 | Planned | Gift licenses, referral program, multi-tab capture |
