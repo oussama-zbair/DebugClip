@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "offers": [
             { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free" },
             { "@type": "Offer", "price": "4", "priceCurrency": "USD", "name": "Pro Lifetime" },
-            { "@type": "Offer", "price": "19", "priceCurrency": "USD", "name": "Ultimate Lifetime" }
+            { "@type": "Offer", "price": "7.99", "priceCurrency": "USD", "name": "Ultimate Lifetime" }
           ],
           "url": "https://debugclip.online",
           "downloadUrl": "https://chromewebstore.google.com/detail/mkkbdlmfhnogenmnffaanalbbbbmcfoe",

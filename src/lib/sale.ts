@@ -8,8 +8,8 @@ export const SALE = {
   endsAt: "2026-12-01T23:59:59Z",
   code: "DEBUGCLIP50",
   percentOff: 50,
-  regularPrice: 19,
-  salePrice: 9.5,
+  regularPrice: 7.99,
+  salePrice: 4,
   endsLabel: "December 1",
   ultimateUrl: "https://www.creem.io/payment/prod_nSm4ho5ypRsaLNDddKd8e",
 } as const;

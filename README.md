@@ -86,7 +86,7 @@
 
 ## Pricing
 
-| | Free | Pro, $4 Lifetime | Ultimate, $19 Lifetime |
+| | Free | Pro, $4 Lifetime | Ultimate, $7.99 Lifetime |
 |---|---|---|---|
 | Error and network capture | Yes | Yes | Yes |
 | Badge counter | Yes | Yes | Yes |

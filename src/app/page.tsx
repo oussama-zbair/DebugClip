@@ -579,7 +579,7 @@ function Pricing() {
             </>
           ) : (
             <p className="text-3xl font-extrabold mb-1">
-              <span className="text-lg line-through text-ds-textMuted font-normal mr-2">$39</span>$19
+              $7.99
             </p>
           )}
           <p className="text-sm text-ds-textMuted mb-5">Lifetime, AI response inside the extension</p>
@@ -596,7 +596,7 @@ function Pricing() {
               <p className="text-xs text-ds-textMuted text-center mt-3">Paste the code in the discount field at checkout.</p>
             </>
           ) : (
-            <a href={SALE.ultimateUrl} target="_blank" rel="noopener" className="btn-primary w-full text-center" style={{ background: "linear-gradient(135deg, #7c3aed, #a855f7)" }}>Get Ultimate, $19 Lifetime</a>
+            <a href={SALE.ultimateUrl} target="_blank" rel="noopener" className="btn-primary w-full text-center" style={{ background: "linear-gradient(135deg, #7c3aed, #a855f7)" }}>Get Ultimate, $7.99 Lifetime</a>
           )}
         </motion.div>
       </div>
@@ -610,7 +610,7 @@ function Pricing() {
 function FAQ() {
   const faqs = [
     { q: "Does DebugClip send my data to external servers?", a: "No. All error capture and prompt compilation happens locally in your browser. The only network call is optional license key validation. Your page data, errors, and API keys never leave your machine." },
-    { q: "What is the difference between Free, Pro, and Ultimate?", a: "Free captures and displays all errors. Pro ($4 lifetime) adds sending to AI, session history, smart filtering, error grouping, and 11 templates. Ultimate ($19 lifetime) adds AI answers directly inside the popup using your own API keys with 6 providers." },
+    { q: "What is the difference between Free, Pro, and Ultimate?", a: "Free captures and displays all errors. Pro ($4 lifetime) adds sending to AI, session history, smart filtering, error grouping, and 11 templates. Ultimate ($7.99 lifetime) adds AI answers directly inside the popup using your own API keys with 6 providers." },
     { q: "Which AI providers are supported?", a: "For sending prompts (Pro): Claude, ChatGPT, Gemini, DeepSeek, Copilot, Mistral, and Groq. For in-popup AI responses (Ultimate): OpenAI, Anthropic, Google Gemini, Groq, DeepSeek, and Mistral via your own API keys." },
     { q: "Is this a subscription?", a: "No. Both Pro and Ultimate are one-time payments. Pay once, use forever. No recurring charges." },
     { q: "Does it work on localhost?", a: "Yes. DebugClip works on any website including localhost, staging servers, production apps, and any framework. No configuration needed." },
